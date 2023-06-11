@@ -1,0 +1,121 @@
+
+/* This file contains the media queries for the site */
+
+
+@media screen and (max-width: 308px) {
+    
+    .trending {
+        padding-left: 80px;
+       
+    }
+    
+    .content {
+       
+        width: 100px;
+        
+    }
+        
+    
+    }
+
+
+    @media (max-width: 575px) {
+       .father-div { 
+       padding-bottom: 400px;
+      
+       }
+        .event-head {
+            height: 24vh;
+        }
+
+        .footbar {
+            display: flex;
+           
+        }
+
+        
+
+        .trend-head {
+          width: 100vw;
+         height: 200px;
+        overflow: hidden;
+
+          
+        }
+
+
+        .trending {
+            display: flex ; 
+           flex-direction: row;
+           padding: 4px;
+           flex-wrap: nowrap;
+           gap: 2;
+           width: 100vw;
+           height: 80%;
+           overflow-x: auto;
+          padding-left: 40px;
+           color: blue;
+          
+        }
+
+        .content {
+            width: 150px;
+            height: 100%;
+            resize: none;
+            flex: 0 0 auto;
+            margin-right: 10px;
+        }
+
+        .event-head {
+            overflow-y: visible;
+            margin-bottom: 285px;
+        }
+              
+    }
+
+
+    @media (max-width: 767.98px) {
+       
+       
+
+        .trending {
+           
+           
+           display: flex !important; 
+           flex-direction: row;
+           gap: 3;
+           overflow-x: scroll;
+         
+           flex-wrap: nowrap;
+        }
+              
+    }
+    
+
+
+    @media (min-width: 769.98px) {
+
+        .trend-head {
+          height: 98vh;
+          overflow-y: scroll;
+          white-space: nowrap;
+        }
+
+    }
+
+
+    @media (min-width: 800px) {
+
+        .event {
+          width: 40vw !important;
+        
+         margin: 0 auto;
+        }
+
+    }
+
+    @media (max-width: 900px) {
+
+    
+
+    }
