@@ -15,3 +15,4 @@ This is the repository for the Campus Aggregator app.
 7. Upload your changes to the remote repository - **git push**
 
 * Step 1: UI/UX mockup
+* Step 2: Building the Frontend Structure of the Mock-Up
