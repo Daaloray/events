@@ -18,7 +18,9 @@ body {
     scroll-behavior: smooth;
 }
 
-
+i {
+    font-size: 25px;
+}
 
 .father-div {
     margin: 0;
