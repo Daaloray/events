@@ -116,6 +116,8 @@ margin: 0;
     padding: 10px;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: 6px 7px 40px -4px
+            rgb(255, 255, 255);
 }
 
 .fa {
