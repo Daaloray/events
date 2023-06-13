@@ -192,6 +192,7 @@ margin: 0;
     content: "Choose image";
   }
   
+  
   /* Change the "No file chosen" text */
   #file-input::file-selector-button::after {
     content: "No image chosen";
