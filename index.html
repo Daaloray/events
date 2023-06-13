@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+   
 </head>
 
 
@@ -56,11 +58,17 @@
 
         <div class="row g-2 ps-lg-4  pt-3  ">
         
-          <div class="col-sm-12 col-lg-5 px-2 form-group">
-            <label for="datepicker">Select Event Date:</label>
-            <input type="text" class="form-control datepicker-input" id="datepicker" placeholder="Select date">
+          <div class="col-sm-12 col-lg-5 px-2  form-group">
+              <label for="datepicker">Select Event Date:</label>
+             
+                <input type="date" class="form-control" id="datepicker" >
+                <!--<div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="fa fa-calendar-alt"></i>
+                  </span>
+                </div>-->
+              
           </div>
-          
 
           <div class="col-sm-12 col-lg-5 px-2   form-group">
             <label for="timepicker">Select Event Time:</label>
@@ -124,6 +132,7 @@
     
 
 
+    
 
     <script src="./script.js"></script>
 </body>
