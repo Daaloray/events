@@ -39,3 +39,13 @@ Tasks
 #file-input::file-selector-button::after {
   content: "No image chosen";
 }
+
+
+
+const fileInput = document.getElementById('file-input');
+const fileLabel = document.querySelector('.custom-file-label');
+
+fileInput.addEventListener('change', (event) => {
+  const fileName = event.target.files[0].name;
+  fileLabel.textContent = fileName;
+});
