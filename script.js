@@ -12,3 +12,7 @@ fileInput.addEventListener('change', (event) => {
 
 
 
+flatpickr(".datepicker-input", {
+    dateFormat: "Y-m-d",
+  });
+  
