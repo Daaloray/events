@@ -4,3 +4,38 @@ Tasks
 - Make alternative Card component using img instead of background img
 - Connect Tailwind *
 - Generate Color Theme **
+
+
+/* Style the file input container */
+#file-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Style the label */
+#file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e8e8e8;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Style the "No image chosen" text */
+#file-chosen {
+  margin-left: 10px;
+  color: #666;
+}
+
+/* Change the "Choose file" text */
+#file-input::file-selector-button::before {
+  content: "Choose image";
+}
+
+/* Change the "No file chosen" text */
+#file-input::file-selector-button::after {
+  content: "No image chosen";
+}
