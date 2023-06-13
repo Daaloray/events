@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="media.css">
     <link rel="stylesheet" href="effect.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.1/css/bootstrap-datepicker.min.css">
+
 </head>
 
 
@@ -47,27 +49,39 @@
 <div class="row">
 
       <div class="left-content container-fluid col-sm-6 themed-grid-col pt-2 ps-sm-3 ">
-        <div class="col-md-6 ps-lg-4 ps-sm-3">
-          <label for="" class="form-label">Event Title</label>
-          <input type="text" class="form-control " id="" required>
+        <div class="col-md-6 ps-lg-4 ps-sm-3 form-group">
+          <label for="eventName" class="form-label">Event Title</label>
+          <input type="text" class="form-control " id="eventName" required>
         </div>
 
         <div class="row g-3 ps-lg-4 px-sm-2 pt-3 ps-sm-3 ">
         
-          <div class="col-md-3">
-            <label for="validationServer05" class="form-label">Date</label>
-            <input type="text" class="form-control" id="" required>
-            <div class="invalid-feedback">
-              Please provide a valid Date for your Event.
-            </div>
+          <div class="col-md-5  form-group">
+              <label for="datepicker">Select Event Date:</label>
+             
+                <input type="date" class="form-control" id="datepicker" >
+                <!--<div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="fa fa-calendar-alt"></i>
+                  </span>
+                </div>-->
+              
           </div>
-          <div class="col-md-3">
-            <label for="validationServer05" class="form-label">Time</label>
-            <input type="text" class="form-control " id="validationServer05" required>
-            <div class="invalid-feedback">
-              Please provide a valid Time for your Event.
-            </div>
-          </div>
+
+          <div class="col-md-5  form-group">
+            <label for="timepicker">Select Event Time:</label>
+           
+              <input type="time" class="form-control" id="timepicker" >
+              <!--<div class="input-group-append">
+                <span class="input-group-text">
+                  <i class="fa fa-calendar-alt"></i>
+                </span>
+              </div>-->
+            
+        </div>
+
+
+         
 
         </div>
 
@@ -84,7 +98,14 @@
 
 
 
-      <div class="right-content container-fluid col-sm-6 themed-grid-col  ">right-content</div>
+      <div class="right-content container-fluid col-sm-6 themed-grid-col  ">
+        <label for="eventarea">Event Details</label>
+        <div class="form-group">
+          <textarea class="form-control h-100" id="eventarea" rows="5" placeholder="Enter full details and extra info on your event here"></textarea>
+        </div>
+        
+        
+      </div>
 </div>
 
       <div class="upload">Upload section here</div>
@@ -108,6 +129,9 @@
 
     
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.1/js/bootstrap-datepicker.min.js"></script>
 
 
     <script src="./script.js"></script>

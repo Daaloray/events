@@ -9,3 +9,14 @@ fileInput.addEventListener('change', (event) => {
   fileLabel.textContent = trimmedFileName;
   checkIcon.style.display = "inline";
 });
+
+
+
+
+$(document).ready(function() {
+    $('#datepicker').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+  });
+  
