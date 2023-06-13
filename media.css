@@ -18,10 +18,9 @@
     
     }
 
-
     @media (max-width: 575px) {
        .father-div { 
-       padding-bottom: 400px;
+       padding-bottom: 500px;
       
        }
         .event-head {
