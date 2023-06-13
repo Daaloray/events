@@ -58,8 +58,8 @@
 
         <div class="row g-2 ps-lg-4  pt-3  ">
         
-          <div class="col-sm-12 col-lg-5 px-2  form-group">
-              <label for="datepicker">Select Event Date:</label>
+          <div class="col-6 col-lg-5 px-2  form-group">
+              <label for="datepicker">Event Date:</label>
              
                 <input type="date" class="form-control" id="datepicker" >
                 <!--<div class="input-group-append">
@@ -70,8 +70,8 @@
               
           </div>
 
-          <div class="col-sm-12 col-lg-5 px-2   form-group">
-            <label for="timepicker">Select Event Time:</label>
+          <div class="col-6 col-lg-5 px-2   form-group">
+            <label for="timepicker">Event Time:</label>
            
               <input type="time" class="form-control" id="timepicker" >
               <!--<div class="input-group-append">
@@ -90,7 +90,7 @@
         <div class="d-flex align-items-center col-sm-12 col-lg-5 px-3 pt-4 gap-1 ">
           <input type="file" name="" id="file-input" accept="image/*">
           <label for="file-input"  id="file-label" class="form-label"><i  class="fa fa-camera" aria-hidden="true"></i></label>
-          <span id="file-chosen">No image Chosen</span>
+          <span id="file-chosen">Add Event Image</span>
          
           <i style="color: green ; display: none;" class="fa fa-check-circle" aria-hidden="true"></i>
         </div>
@@ -135,5 +135,12 @@
     
 
     <script src="./script.js"></script>
+    <script>
+      new Datepicker("#datepicker", {
+  format: "mm/dd/yy",
+  autohide: true,
+});
+
+    </script>
 </body>
 </html>
