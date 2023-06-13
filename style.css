@@ -12,6 +12,7 @@
 
 
 
+
 body {
     margin: 0;
     padding: 0;
@@ -133,12 +134,15 @@ margin: 0;
 
 /*Here comes the code for the dashboard*/
 
-.profile-details {
-    height: 12vh;
+.left-parent {
+    height: 8vh;
 }
 
 .profile-pic {
     border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
 }
 
 .dp {
@@ -151,3 +155,45 @@ margin: 0;
     
   
 }
+
+
+
+
+/* Style the file input container */
+#file-input {
+    position: absolute;
+    opacity: 0;
+   
+   
+  }
+  
+  /* Style the label */
+  #file-label {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #e8e8e8;
+    color: #333;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  /* Style the "No image chosen" text */
+  #file-chosen {
+    margin-left: 10px;
+    color: #666;
+  }
+  
+  /* Change the "Choose file" text */
+  #file-input::file-selector-button::before {
+    content: "Choose image";
+  }
+  
+  /* Change the "No file chosen" text */
+  #file-input::file-selector-button::after {
+    content: "No image chosen";
+  }
+  

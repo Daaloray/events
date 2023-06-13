@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,18 +32,54 @@
 
       <div class="profile-details container-fluid py-3  border border-dark">
 
-<div class="d-flex justify-content-start gap-2 " >
+<div class="d-flex left-parent justify-content-start gap-2 " >
     <div class="profile-pic w-auto border border-danger p-0"><img class="dp" src="./Nigeria.jpg" alt=""></div>
     <div class="names d-flex flex-column text-center"><span class="fs-5" >Okoye Charles</span> <span class="small">P.R.O, Lasumsa</span></div>
 </div>
       </div>
 
       <div class="create-content">
-      <div class="container-fluid  border border-dark">Hello charles, Upload an event</div>
+      <div class="container-fluid py-3  border border-dark">Hello charles, Upload an event</div>
 
 
 <div class="row">
-      <div class="left-content container-fluid col-sm-6 themed-grid-col ">left-content</div>
+
+      <div class="left-content container-fluid col-sm-6 themed-grid-col pt-2 ">
+        <div class="col-md-6 ps-lg-4 px-sm-2">
+          <label for="" class="form-label">Event Title</label>
+          <input type="text" class="form-control " id="" required>
+        </div>
+
+        <div class="row g-3 ps-lg-4 px-sm-2 pt-3">
+        
+          <div class="col-md-3">
+            <label for="validationServer05" class="form-label">Date</label>
+            <input type="text" class="form-control" id="" required>
+            <div class="invalid-feedback">
+              Please provide a valid Date for your Event.
+            </div>
+          </div>
+          <div class="col-md-3">
+            <label for="validationServer05" class="form-label">Time</label>
+            <input type="text" class="form-control " id="validationServer05" required>
+            <div class="invalid-feedback">
+              Please provide a valid Time for your Event.
+            </div>
+          </div>
+
+        </div>
+
+        <div class="d-flex align-items-center col-md-6 ps-lg-4 px-sm-2 pt-4 ">
+          <input type="file" name="" id="file-input" accept="image/*">
+          <label for="file-input"  id="file-label" class="form-label"><i style="font-size: large;" class="fa fa-camera" aria-hidden="true"></i></label>
+          <span id="file-chosen">No image Chosen</span>
+        </div>
+
+
+      </div>
+
+
+
       <div class="right-content container-fluid col-sm-6 themed-grid-col  ">right-content</div>
 </div>
 
