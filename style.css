@@ -123,3 +123,31 @@ margin: 0;
 .fa {
     font-style: normal;
 }
+
+
+
+
+
+
+
+
+/*Here comes the code for the dashboard*/
+
+.profile-details {
+    height: 12vh;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+.dp {
+    font-size: 16px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    
+  
+}
