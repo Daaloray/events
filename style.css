@@ -170,6 +170,11 @@ margin: 0;
     height: 8vh;
 }
 
+
+.profile-details {
+    height: 15vh;
+}
+
 .profile-pic {
     border-radius: 50%;
     border: none;
