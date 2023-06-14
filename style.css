@@ -173,6 +173,7 @@ margin: 0;
 
 .profile-details {
     height: 15vh;
+    border-bottom: 1px solid rgba(0, 123, 255, .2);;
 }
 
 .profile-pic {

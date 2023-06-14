@@ -11,24 +11,14 @@ fileInput.addEventListener('change', (event) => {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", function() {
   var slideDiv = document.getElementById("slideDiv");
   var scrollThreshold = 80; // Adjust the desired scroll threshold here
   var isDivVisible = true;
-  var isScrolling = false;
-  
+
   // Initially show the slideDiv
   slideDiv.classList.add("show");
-
-  function debounce(func, delay) {
-    var timer;
-    return function() {
-      clearTimeout(timer);
-      timer = setTimeout(function() {
-        func();
-      }, delay);
-    };
-  }
 
   function handleScroll() {
     var scrollPos = window.scrollY || window.pageYOffset;
@@ -40,19 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
       slideDiv.classList.add("show");
       isDivVisible = true;
     }
-    
-    isScrolling = false;
   }
 
-  window.addEventListener("scroll", function() {
-    if (!isScrolling) {
-      isScrolling = true;
-      requestAnimationFrame(function() {
-        handleScroll();
-      });
-    }
-  });
-
-  var debouncedHandleScroll = debounce(handleScroll, 200);
-  window.addEventListener("scroll", debouncedHandleScroll);
+  window.addEventListener("scroll", handleScroll);
 });
