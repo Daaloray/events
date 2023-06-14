@@ -12,5 +12,17 @@ fileInput.addEventListener('change', (event) => {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  var slideDiv = document.getElementById("slideDiv");
+  var scrollThreshold = 100; // Adjust the desired scroll threshold here
 
-  
+  window.addEventListener("scroll", function() {
+    var scrollPos = window.scrollY || window.pageYOffset;
+
+    if (scrollPos > scrollThreshold) {
+      slideDiv.classList.remove("show");
+    } else {
+      slideDiv.classList.add("show");
+    }
+  });
+});

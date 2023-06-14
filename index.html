@@ -34,17 +34,17 @@
     <div class="parent m-0 p-0">
 
 
-      <div class="profile-details container-fluid pt-3 ps-5  ">
+      <div class="profile-details container-fluid pt-3 ps-2  ">
 
 <div class="d-flex left-parent justify-content-start gap-2 " >
     <div class="profile-pic w-auto  p-0"><img class="dp" src="./Nigeria.jpg" alt=""></div>
     <div class="names d-flex flex-column text-center"><span class="fs-5" >Okoye Charles</span> <span class="small">P.R.O, Lasumsa</span></div>
 
   </div>
-<hr>
+
       </div>
 
-      <div class="create-content m-0 p-0">
+      <div class="create-content m-0 pt-4" id="create-content">
       <!--<div class="container  ">Hello Charles, Upload an event</div>-->
 
 
@@ -58,22 +58,25 @@
 
         <div class="row g-2 ps-lg-4  pt-3  ">
         
-          <div class="col-6 col-lg-5 px-2  form-group">
-              <label for="datepicker">Event Date:</label>
-             
-              <input type="text" class="form-control datepicker-input" id="datepicker" >
-                <!--<div class="input-group-append">
+          <div class="col-8 col-lg-5 px-2  form-group">
+            
+              <label for="datepicker">Select Event Date</label>
+              <div class="input-group">
+                <input type="date" class="form-control datepicker-input" id="datepicker" placeholder="mm/dd/yy" aria-label="Select date">
+                <div class="input-group-append">
                   <span class="input-group-text">
                     <i class="fa fa-calendar-alt"></i>
                   </span>
-                </div>-->
+                </div>
+              </div>
+            
               
           </div>
 
-          <div class="col-6 col-lg-5 px-2   form-group">
-            <label for="timepicker">Event Time:</label>
+          <div class="col-4 col-lg-5 px-2   form-group">
+            <label for="timepicker">Event Time</label>
            
-              <input type="time" class="form-control" id="timepicker" >
+              <input type="time" class="form-control" id="timepicker"  >
               <!--<div class="input-group-append">
                 <span class="input-group-text">
                   <i class="fa fa-calendar-alt"></i>
@@ -110,12 +113,32 @@
       </div>
 </div>
 
-      <div class="upload">Upload section here</div>
+      <div class="upload row border border-dark">
+        <div class="hint col-sm-12 border border-dark">hello </div>
+        
+      </div>
+
+      <div id="slideDiv" class="  create-cont slide-div ">
+        <div class=" w-auto">
+          <button type="button" id="upload-button" class="create-button btn-dark " data-bs-toggle="tooltip" data-bs-placement="left" title="Create Event">
+         <i class="fab fa-telegram fa-2x text-light"></i>
+          
+          </button>
+        </div>
+        </div>
 
 
 
 
       </div>
+
+
+      <div id="hint" class="hint col-sm-12 h-75 border border-dark">world </div>
+      <div class="hint col-sm-12 border border-dark">hello </div>
+      <div class="hint col-sm-12 border border-dark">hello </div>
+      <div class="hint col-sm-12 border border-dark">hello </div>
+      <div class="hint col-sm-12 border border-dark">hello </div>
+      <div class="hint col-sm-12 border border-dark">hello </div>
 
 
 
@@ -133,14 +156,8 @@
 
 
     
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./script.js"></script>
-    <script>
-      new Datepicker("#datepicker", {
-  format: "mm/dd/yy",
-  autohide: true,
-});
-
-    </script>
+   
 </body>
 </html>

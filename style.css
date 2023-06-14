@@ -102,10 +102,23 @@ margin: 0;
 
 }
 
-.create-cont {
-   margin-bottom: 15vh;
-   margin-right: 8vw;
-}
+.slide-div {
+    position: fixed;
+    bottom: 20px;
+    right: -100px; /* Initial position outside the viewport */
+    transition: right 0.5s ease-out; /* Animation duration and easing */
+  }
+  
+  .slide-div.show {
+    right: 20px; /* Final position when shown */
+    opacity: 1; /* Show the div */
+  }
+  
+  .slide-div.hide {
+    right: -100px; /* Hide the div */
+    opacity: 0;
+  }
+  
 
 .create-button {
     background-color: black;
@@ -121,6 +134,24 @@ margin: 0;
             rgb(255, 255, 255);
 }
 
+.upload-button {
+        color: white;
+        font-size: 16px;
+        border: none;
+        width: 60px;
+        height: 60px;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 6px 7px 40px -4px
+                rgb(255, 255, 255);
+                transition: right 0.5s ease-out;
+                right: -100px;
+}
+
+.upload-button {
+    right: 20px;
+}
 .fa {
     font-style: normal;
     font-size: 25px;
