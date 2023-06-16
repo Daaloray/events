@@ -50,3 +50,21 @@ fileInput.addEventListener('change', (event) => {
   const fileName = event.target.files[0].name;
   fileLabel.textContent = fileName;
 });
+
+
+
+<span id="text-span">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non efficitur dui. Aenean sagittis facilisis ultricies. Nullam accumsan tortor lorem, eu dapibus arcu tincidunt sed. Sed malesuada velit at tempus semper. Proin pretium metus vitae nisi suscipit, ut condimentum dolor cursus.
+</span>
+
+<script>
+  var span = document.getElementById("text-span");
+  var text = span.innerHTML;
+  var words = text.split(" ");
+  var wordLimit = 77; // Set the word limit here
+
+  if (words.length > wordLimit) {
+    var truncatedText = words.slice(0, wordLimit).join(" ") + " ...";
+    span.innerHTML = truncatedText;
+  }
+</script>
