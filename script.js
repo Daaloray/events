@@ -13,6 +13,16 @@
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  var likeIcon = document.querySelector('.like-icon');
+
+  likeIcon.addEventListener('click', function() {
+    this.classList.toggle('liked');
+    
+  });
+});
+
+
 const fileInput = document.getElementById('file-input');
 const fileLabel = document.querySelector('#file-chosen');
 const checkIcon = document.querySelector('.fa-check-circle')
@@ -48,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener("scroll", handleScroll);
 });
+
+
 
 
 

@@ -141,6 +141,27 @@ margin: 0;
 
 }
 
+.like-icon {
+ 
+
+  cursor: pointer;
+  transition: color 0.3s;
+  
+  
+ 
+}
+
+.like-icon.liked {
+  color: red;
+  
+  text-shadow: 0 0 13px red;
+}
+
+
+
+
+
+
 .slide-div {
     position: fixed;
     bottom: 95px;
@@ -171,7 +192,7 @@ margin: 0;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 6px 7px 40px -4px
-           purple;
+           rgb(152, 119, 189);
 }
 
 .upload-button {
