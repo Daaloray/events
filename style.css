@@ -33,10 +33,18 @@ a {
 
 
 
-.content {
+.trend-content {
    border: 1px solid black;
    height: 20vh;
    padding: 2px;
+  background-image: url(./ball.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   object-fit: contain;
+   overflow: hidden;
+   width: auto;
+   margin: 0;
   
      
 }
@@ -45,15 +53,20 @@ a {
     color: #271770;
     display: none;
     grid-row: 2;
-    height: 50px;
+    height: 55px;
     background-color: #FFFF;
     width: auto;
-   
+   border: none;
+ }
+
+
+ .trend {
+
  }
  
  
  .footbar div {
-     border: 1px solid rgb(224, 217, 217);
+     
      width:25%;
      display: flex;
      align-items: center;
@@ -202,6 +215,10 @@ margin: 0;
     box-shadow: 6px 7px 40px -4px
            rgb(152, 119, 189);
 }
+.create-icon {
+  font-style: normal;
+  font-size: 20px;
+}
 
 .upload-button {
         color: white;
@@ -221,10 +238,7 @@ margin: 0;
 .upload-button {
     right: 20px;
 }
-.fa {
-    font-style: normal;
-    font-size: 25px;
-}
+
 
 
 

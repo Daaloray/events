@@ -9,7 +9,7 @@
        
     }
     
-    .content {
+    .trend-content {
        
         width: 100px;
         
@@ -65,7 +65,7 @@
           
         }
 
-        .content {
+        .trend-content {
             width: 150px;
             height: 100%;
             resize: none;
