@@ -5,8 +5,8 @@
   spanElements.forEach(function(span) {
     var text = span.textContent;
     
-    if (text.length > 47) {
-      var truncatedText = text.slice(0, 47) + '...';
+    if (text.length > 120) {
+      var truncatedText = text.slice(0, 120) + '...';
       span.textContent = truncatedText;
     }
   });
