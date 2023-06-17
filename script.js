@@ -12,16 +12,15 @@
   });
 });
 
+ document.addEventListener('DOMContentLoaded', function() {
+      var likeButtons = document.querySelectorAll('.like-icon');
 
-document.addEventListener('DOMContentLoaded', function() {
-  var likeIcon = document.querySelector('.like-icon');
-
-  likeIcon.addEventListener('click', function() {
-    this.classList.toggle('liked');
-    
-  });
-});
-
+      likeButtons.forEach(function(likeButton) {
+        likeButton.addEventListener('click', function() {
+          this.classList.toggle('liked');
+        });
+      });
+    });
 
 const fileInput = document.getElementById('file-input');
 const fileLabel = document.querySelector('#file-chosen');
