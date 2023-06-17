@@ -213,8 +213,12 @@ font-size: 0.875em;
 }
 
  .small-icon {
-    font-size: 18px;
+    font-size: 17px;
     }
+
+    .small-icon-text {
+        font-size: 16px;
+        }
 
 mark, .mark {
 padding: 0.2em;
@@ -7377,7 +7381,7 @@ margin-bottom: 1.5rem !important;
 margin-bottom: 3rem !important;
 }
 .mb-event-5 {
-    margin-bottom: 5rem !important;
+    margin-bottom: 4rem !important;
     }
 
 .mb-auto {
