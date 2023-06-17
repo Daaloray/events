@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <html lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LUCOM:The Official Web App for Events happening in LASUCOM " >
+    <meta name="keywords" content="lasucom, events, lasucom-events, lasucom news">
+    <meta name="author" content="The LUCOM-DEV Team">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="effect.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+   
+</head>
+
+
+<body class="bg-white m-0 p-0 ">
+
+
+    <div class="parent m-0 p-0">
+
+
+      <div class="profile-details container-fluid pt-3 ps-2  ">
+
+<div class="d-flex left-parent justify-content-start gap-2 " >
+    <div class="profile-pic w-auto  p-0"><img class="dp" src="./Nigeria.jpg" alt=""></div>
+    <div class="names d-flex flex-column text-center"><span class="fs-5" >Okoye Charles <span><i class=""></i></span></span> <span class="small">P.R.O, Lasumsa</span></div>
+
+  </div>
+
+      </div>
+
+      <div class="create-content m-0 " id="create-content">
+      <!--<div class="container  ">Hello Charles, Upload an event</div>-->
+
+
+<div class="row  mt-3">
+
+      <div class="left-content container col-sm-6 themed-grid-col pt-2 ps-sm-3 ">
+        <div class="col-sm-12 col-lg-12  px-2   form-group">
+          <label for="eventName" class="form-label">Event Title</label>
+          <input type="text" class="form-control " id="eventName" placeholder="Enter Event Title" required>
+        </div>
+
+        <div class="row g-2 ps-lg-4  pt-3  ">
+        
+          <div class="col-7 col-lg-5 px-2  form-group">
+            
+              <label class="pb-2" for="datepicker">Event Date</label>
+              <div class="input-group">
+                <input type="date" class="form-control datepicker" placeholder="mm/dd/yy" aria-label ="select date">
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="fa fa-calendar-alt"></i>
+                  </span>
+                </div>
+              </div>
+            
+              
+          </div>
+
+          <div class="col-4 col-lg-5 px-2  right-content  form-group">
+            <label class="pb-2" for="timepicker">Event Time</label>
+           
+              <input type="time" class="form-control timepicker"  placeholder="time" >
+              
+            
+        </div>
+
+
+         
+
+        </div>
+
+        <div class="d-flex align-items-center col-sm-5 col-lg-5 px-3 pt-4 gap-1  w-auto h-auto ">
+          <input type="file" name="" id="file-input" accept="image/*" >
+          <label for="file-input"  id="file-label" class="form-label"><i  class="fa fa-camera" aria-hidden="true"></i></label>
+          <span id="file-chosen">Add Event Image</span>
+         
+          <i style="color: green ; display: none;" class="fa fa-check-circle" aria-hidden="true"></i>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="right-content container-fluid col-sm-6 themed-grid-col pt-2  ">
+                <div class="px-2 form-group">
+          <label class="pb-2" for="eventarea">Event Details</label>
+          <textarea class="form-control h-100" id="eventarea" rows="6" placeholder="Enter full details about your event here"></textarea>
+        </div>
+        
+        
+      </div>
+</div>
+
+      <div class="upload pt-2 ">
+        <div class="container hint col-sm-12 small  text-center"><span><i class="fa fa-pen fa-sm"></i></span> Events from this account will be assigned a top priority badge </div>
+        
+      </div>
+
+      <div id="slideDiv" class="  create-cont slide-div ">
+        <div class=" w-auto">
+          <button type="button" id="upload-button" class="create-button " data-bs-toggle="tooltip" data-bs-placement="left" title="Create Event">
+         <i class="fab fa-telegram fa-2x text-light"></i>
+          
+          </button>
+        </div>
+        </div>
+
+
+
+
+      </div>
+
+
+      
+      
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+   
+</body>
+</html>
