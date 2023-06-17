@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
+    background-color:#473497;
 }
 
 
@@ -37,11 +37,11 @@ body {
 }
 
 .footbar {
-    color: white;
+    color: #271770;
     display: none;
     grid-row: 2;
     height: 60px;
-    background: black;
+    background: #FFFF;
     width: auto;
    
  }
@@ -69,11 +69,38 @@ body {
     height: 50vh;
     padding: 0;
     margin: 0;
+    border: 1px solid #ccc;
+      transition: border-color 0.3s;
+      position: relative;
    
     
 }
+
+.event:hover, .event:focus {
+    border-color: purple;
+      box-shadow: 0 0 12px purple;
+}
+
+.event::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid transparent;
+    z-index: -1;
+    transition: border-color 0.3s;
+}
+
+.event:hover::before,
+.event:focus::before {
+  border-color: purple;
+  box-shadow: 0 0 1px purple;
+}
+
 .event-card{
-    background-image: url(./Nigeria.jpg);
+    background-image: url(./calc.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,6 +110,18 @@ body {
     height: 35vh;
     margin: 0;
 
+}
+
+.event-header {
+   
+}
+
+.eventtitle {
+    overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
 }
 
 .top {
@@ -119,9 +158,10 @@ margin: 0;
     opacity: 0;
   }
   
+  
 
 .create-button {
-    background-color: black;
+    background-color: #473497;
     color: white;
     font-size: 16px;
     border: none;
@@ -131,7 +171,7 @@ margin: 0;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 6px 7px 40px -4px
-            rgb(255, 255, 255);
+            rgb(221, 200, 12);
 }
 
 .upload-button {

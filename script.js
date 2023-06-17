@@ -1,4 +1,18 @@
 
+ document.addEventListener('DOMContentLoaded', function() {
+  var spanElements = document.querySelectorAll('.event-title');
+
+  spanElements.forEach(function(span) {
+    var text = span.textContent;
+    
+    if (text.length > 47) {
+      var truncatedText = text.slice(0, 47) + '...';
+      span.textContent = truncatedText;
+    }
+  });
+});
+
+
 const fileInput = document.getElementById('file-input');
 const fileLabel = document.querySelector('#file-chosen');
 const checkIcon = document.querySelector('.fa-check-circle')
@@ -34,3 +48,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener("scroll", handleScroll);
 });
+
+
+
+  

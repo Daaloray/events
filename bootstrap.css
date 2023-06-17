@@ -212,6 +212,10 @@ small, .small {
 font-size: 0.875em;
 }
 
+ .small-icon {
+    font-size: 18px;
+    }
+
 mark, .mark {
 padding: 0.2em;
 background-color: #fcf8e3;
@@ -6519,6 +6523,13 @@ left: 0;
 z-index: 1030;
 }
 
+.fixed-bottoms {
+    position: fixed;
+    right: 20px;
+    bottom: 65px;
+    z-index: 1030;
+    }
+
 .sticky-top {
 position: -webkit-sticky;
 position: sticky;
@@ -7301,8 +7312,13 @@ margin-top: 1rem !important;
 margin-top: 1.5rem !important;
 }
 
+
 .mt-5 {
-margin-top: 3rem !important;
+margin-top: 5rem !important;
+}
+
+.mt-event-5 {
+margin-top: 5rem !important;
 }
 
 .mt-auto {
@@ -7360,6 +7376,9 @@ margin-bottom: 1.5rem !important;
 .mb-5 {
 margin-bottom: 3rem !important;
 }
+.mb-event-5 {
+    margin-bottom: 5rem !important;
+    }
 
 .mb-auto {
 margin-bottom: auto !important;
