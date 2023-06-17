@@ -20,6 +20,11 @@ body {
 }
 
 
+a {
+  text-decoration: none;
+  
+}
+
 
 .father-div {
     margin: 0;
@@ -40,15 +45,15 @@ body {
     color: #271770;
     display: none;
     grid-row: 2;
-    height: 60px;
-    background: #FFFF;
+    height: 50px;
+    background-color: #FFFF;
     width: auto;
    
  }
  
  
  .footbar div {
-     border: 1px solid grey;
+     border: 1px solid rgb(224, 217, 217);
      width:25%;
      display: flex;
      align-items: center;
@@ -57,7 +62,10 @@ body {
      height: auto;
  }
  
-
+ .navigate:focus, .navigate:hover {
+  background-color: #271770 ;
+  color: #FFFF;
+ }
 .event-head {
     overflow-y: scroll;
    height: 98vh;
