@@ -34,10 +34,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
+                <a class="nav-link" href="#event-head">Events</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link ">More</a>
+                <a class="nav-link " href="#trend-head">Trending</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -120,10 +120,10 @@
 
 
 
-<div style="margin: 0;"  class="row">
+<div style="margin: 0;"  class="row ">
 
-  <div class="container-fluid col-sm-4 themed-grid-col trend-head order-md-2    ">
-    <h4 class="mt-2">Trending in Lasucom</h4>
+  <div id="trend-head" class=" container-fluid col-sm-4 themed-grid-col trend-head order-md-2    ">
+    <h4 class="pt-3">Trending in Lasucom</h4>
 <div class="trending container-fluid m-0 p-0 d-flex flex-lg-column flex-sm-column gap-2  " >
 <div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
 <div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
@@ -161,7 +161,7 @@
           <div class="more "><i class="small-icon fa far fa-thin fa-message engage-icon"></i></div>
           </div>
           <div class="content-right d-flex align-items-center gap-1 ">
-              <small class="small  ">See Event details</small><i class="small-icon fa fa-light  fa-arrow-right"></i>
+              <small class="small  " data-bs-toggle="modal" data-bs-target="#modalSheet">See Event details </small><i class="small-icon fa fa-light  fa-arrow-right"></i>
           </div>
         </div>
         <div class="bg-white">
@@ -194,7 +194,7 @@
             <div class="more "><i class="small-icon fa far fa-thin fa-message engage-icon"></i></div>
             </div>
             <div class="content-right d-flex align-items-center gap-1 ">
-                <small class="small  ">See Event details</small><i class="small-icon fa fa-light  fa-arrow-right"></i>
+                <small class="small " data-bs-toggle="modal" data-bs-target="#modalSheet">See Event details </small><i class="small-icon fa fa-light  fa-arrow-right"></i>
             </div>
           </div>
           <div class="bg-white">
@@ -242,10 +242,10 @@
 
 <div class="footbar">
 
-  <div class="navigate"><i class="fa fa-thin fa-house small-icon"></i></div>
-  <div class="navigate"><i class="fa fa-sharp fa-light fa-magnifying-glass small-icon"></i></div>
-  <div class="navigate"><i class="fa fa-thin fa-bell small-icon"></i></div>
-  <div class="navigate"><i class="fa fa-light fa-list-ul small-icon"></i></div>
+  <div class="navigate"><i class="fa fa-thin fa-house "></i></div>
+  <div class="navigate"><i class="fa fa-sharp fa-light fa-magnifying-glass "></i></div>
+  <div class="navigate"><i class="fa fa-thin fa-bell"></i></div>
+  <div class="navigate"><i class="fa fa-light fa-list-ul"></i></div>
 
 </div>
 </div>
@@ -253,7 +253,26 @@
 
 
     </div>
+    <div class="modal  fade   " tabindex="-1" role="dialog" id="modalSheet" aria-hidden="false">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content rounded-4 shadow">
+          <div class="modal-header border-bottom-0">
+            <h1 class="modal-title fs-5">NIGERIAN INDEPENDENCE DAY</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body event-details py-0">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aspernatur iusto ipsa iure, ratione veniam. Nihil cupiditate eligendi unde voluptatum ipsam earum nobis? Laudantium, quis molestias non quisquam tenetur quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae sit, voluptates reiciendis a iure vel ipsa officia beatae, qui, illo laboriosam quis odio. Officia corrupti nam quo quam vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ullam magni dolore nisi distinctio dolores, optio ab fugiat reprehenderit adipisci eveniet beatae deserunt itaque nihil velit incidunt consequatur placeat. Doloremque..</p>
+          </div>
+          <div class="modal-footer flex-column border-top-0">
+           
+            <button type="button" class="btn btn-lg btn-light w-100 mx-0" data-bs-dismiss="modal">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     
+  
     <script src="script.js"></script>
     <script src="bootstrap.bundle.min.js"></script>
 </body>

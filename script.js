@@ -22,6 +22,10 @@
       });
     });
 
+
+
+
+    
 const fileInput = document.getElementById('file-input');
 const fileLabel = document.querySelector('#file-chosen');
 const checkIcon = document.querySelector('.fa-check-circle')
