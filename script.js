@@ -39,7 +39,7 @@ fileInput.addEventListener('change', (event) => {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
   var slideDiv = document.getElementById("slideDiv");
   var scrollThreshold = 100; // Adjust the desired scroll threshold here
   var isDivVisible = true;
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   window.addEventListener("scroll", handleScroll);
-});
+}); */
 
 
 
