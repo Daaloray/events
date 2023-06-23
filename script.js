@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
     if (text.length > 120) {
-      var truncatedText = text.slice(0, 130) + '... Read more' ;
+      var truncatedText = text.slice(0, 90) + '... Read more' ;
       span.textContent = truncatedText ;
     }
   });

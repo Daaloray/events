@@ -48,7 +48,9 @@ a {
 
 .trend-text {
   overflow-y: hidden;
- height: 23vh;
+ height: 24.8vh;
+ border: 1px solid blueviolet;
+ 
 }
 
 
@@ -58,7 +60,7 @@ a {
    height: 23vh;
    width: auto;
    margin: 0;
-   
+   border: 1px solid blueviolet;
   
      
 }
