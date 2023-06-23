@@ -1,32 +1,19 @@
 
 /* This file contains the media queries for the site */
 
-
 @media screen and (max-width: 308px) {
-    
-  
     
     .trend-content {
        
-        width: 500px;
-        
-        
-    }
-        
+        width: 700px;
     
     }
+        
+    }
     
+  
 
-@media screen and (max-width: 306px) {
-   
-
-}
-
-    
-
-    @media (max-width: 762px) {
-      
-
+@media (max-width: 762px) {
        .event {
         width: 80%;
        /* border: 2px solid red;*/
@@ -43,10 +30,6 @@
            color: #271770;
         }
 
-        
-
-       
-
         .event-head {
             overflow-y: visible;
             margin-bottom: 25px;
@@ -56,46 +39,36 @@
     }
 
 
-    @media (max-width: 767.98px) {
-       
-       
-
+@media (max-width: 767.98px) {
         .trending {
           
            height: auto;
            display: flex !important; 
            flex-direction: row !important;
-          
+          gap: 2.5rem;
           overflow-x: scroll;
            flex-wrap: nowrap !important;
-           
-           
+            
         }
-
 
         .trend-head {
             width: auto;
            height: 200px;
-         
-  
-            
           }
   
           .trend-content {
-              width: 290px;
-              height: 25vh;
+              width: 350px;
+              height: 23vh;
               
               flex: 0 0 auto;
-              margin-right: 15px;
+              margin-right: 1px;
           }
-
-         
-              
+   
     }
     
 
 
-    @media (min-width: 769.98px) {
+@media (min-width: 769.98px) {
 
         .trend-head {
           height: 98vh;
@@ -106,21 +79,14 @@
     }
 
 
-    @media (max-width: 575px) {
+@media (max-width: 575px) {
 
         .event {
-            width: 98%;
+            width: 90%;
             
            
            }
-      
-
-        
 
     }
 
-    @media (max-width: 900px) {
-
-    
-
-    }
+   

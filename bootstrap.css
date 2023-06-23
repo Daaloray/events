@@ -3019,16 +3019,82 @@ pointer-events: none;
 opacity: 0.65;
 }
 
-.btn-primary {
-color: #fff;
-background-color: #0d6efd;
-border-color: #0d6efd;
+
+.btn-lucom-1 {
+    background-color: #271770;
+    border-color: #271770;
+    color: white;
 }
-.btn-primary:hover {
-color: #fff;
-background-color: #0b5ed7;
-border-color: #0a58ca;
+
+.btn-lucom-1:hover {
+    background-color: yellow;
+    border-color: yellow;
+    color: rgb(0, 0, 0);
 }
+
+
+
+.btn-check:focus + .btn-lucom-1, .btn-lucom-1:focus {
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    border-color: yellow;
+    box-shadow: 0 0 0 0.25rem rgba(219, 216, 11, 0.5);
+    }
+    .btn-check:checked + .btn-lucom-1, .btn-check:active + .btn-lucom-1, .btn-lucom-1:active, .btn-lucom-1.active, .show > .btn-lucom-1.dropdown-toggle {
+    color: rgb(0, 0, 0);
+    background-color: yellow;
+    border-color: yellow;
+    }
+    .btn-check:checked + .btn-lucom-1:focus, .btn-check:active + .btn-lucom-1:focus, .btn-lucom-1:active:focus, .btn-lucom-1.active:focus, .show > .btn-lucom-1.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(233, 210, 10, 0.74);
+    }
+
+
+    
+.btn-lucom-2 {
+    background-color: #271770;
+    border-color: #271770;
+    color: white;
+}
+
+.btn-lucom-2:hover {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+
+.btn-check:focus + .btn-lucom-2, .btn-lucom-2:focus {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+    }
+    .btn-check:checked + .btn-lucom-2, .btn-check:active + .btn-lucom-2, .btn-lucom-2:active, .btn-lucom-2.active, .show > .btn-lucom-2.dropdown-toggle {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    }
+    .btn-check:checked + .btn-lucom-2:focus, .btn-check:active + .btn-lucom-2:focus, .btn-lucom-2:active:focus, .btn-lucom-2.active:focus, .show > .btn-lucom-2.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.74);
+    }
+
+
+
+    .btn-primary {
+        color: #fff;
+        background-color: #0d6efd;
+        border-color: #0d6efd;
+        }
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+        }
+        
+
 .btn-check:focus + .btn-primary, .btn-primary:focus {
 color: #fff;
 background-color: #0b5ed7;
@@ -4078,7 +4144,7 @@ padding: 0.25rem 0.75rem;
 font-size: 1.25rem;
 line-height: 1;
 background-color: transparent;
-border: 1px solid transparent;
+border: 0.5px solid yellow;
 border-radius: 0.25rem;
 transition: box-shadow 0.15s ease-in-out;
 }
@@ -4093,7 +4159,7 @@ text-decoration: none;
 .navbar-toggler:focus {
 text-decoration: none;
 outline: 0;
-box-shadow: 0 0 0 0.25rem;
+box-shadow: 0 0 0 0.15rem #FFF;
 }
 
 .navbar-toggler-icon {
@@ -5386,20 +5452,20 @@ box-sizing: content-box;
 width: 1em;
 height: 1em;
 padding: 0.25em 0.25em;
-color: #000;
+color: #271770;
 background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
 border: 0;
 border-radius: 0.25rem;
 opacity: 0.5;
 }
 .btn-close:hover {
-color: #000;
+color: rgb(39, 23, 112);
 text-decoration: none;
 opacity: 0.75;
 }
 .btn-close:focus {
 outline: 0;
-box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+box-shadow: 0 0 0 0.25rem rgba(39,23,112, 0.25);
 opacity: 1;
 }
 .btn-close:disabled, .btn-close.disabled {
@@ -6058,7 +6124,7 @@ transition: none;
 position: absolute;
 top: 0;
 bottom: 0;
-z-index: 1;
+z-index: 99;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -6125,7 +6191,7 @@ position: absolute;
 right: 0;
 bottom: 0;
 left: 0;
-z-index: 2;
+z-index: 99;
 display: flex;
 justify-content: center;
 padding: 0;
@@ -6163,13 +6229,18 @@ opacity: 1;
 
 .carousel-caption {
 position: absolute;
-right: 15%;
-bottom: 1.25rem;
-left: 15%;
-padding-top: 1.25rem;
-padding-bottom: 1.25rem;
-color: #fff;
+right: 0; /*formerly 15%*/
+top: 0;
+bottom: 0;
+left: 0; /*formerly 15%*/
+padding-left: 15%;
+padding-top: 8%;
+padding-right: 15%;
+color: #FFF;
 text-align: center;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 1;
+
 }
 
 .carousel-dark .carousel-control-prev-icon,
@@ -7607,6 +7678,14 @@ font-size: calc(1.375rem + 1.5vw) !important;
 .event-tiny {
     font-size: 10px !important;
     }
+
+    .event-txt-sm {
+        font-size:  0.775em !important;
+        }
+
+        .event-lg {
+            font-size: 10px !important;
+            }
 
 .fs-2 {
 font-size: calc(1.325rem + 0.9vw) !important;

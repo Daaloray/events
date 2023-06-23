@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   var spanElements = document.querySelectorAll('.trend-text');
  
   spanElements.forEach(function(span) {
@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
     
     if (text.length > 120) {
-      var truncatedText = text.slice(0, 110) + '... Read more' ;
+      var truncatedText = text.slice(0, 980) + '... Read more' ;
       span.textContent = truncatedText ;
     }
   });
-});
+});*/
 
 
  document.addEventListener('DOMContentLoaded', function() {
