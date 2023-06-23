@@ -4,14 +4,12 @@
 
 @media screen and (max-width: 308px) {
     
-    .trending {
-        padding-left: 80px;
-       
-    }
+  
     
     .trend-content {
        
-        width: 100px;
+        width: 500px;
+        
         
     }
         
@@ -26,13 +24,21 @@
 
     
 
-    @media (max-width: 575px) {
+    @media (max-width: 762px) {
        .father-div { 
-       padding-bottom: 500px;
+       /*padding-bottom: 20px;*/
       
        }
+
+       .event {
+        width: 80%;
+       /* border: 2px solid red;*/
+       }
+
         .event-head {
-            height: 24vh;
+            height: auto;
+           /* border: 3px solid greenyellow;*/
+            width: 100%;
         }
 
         .footbar {
@@ -42,36 +48,7 @@
 
         
 
-        .trend-head {
-          width: 100vw;
-         height: 200px;
-        overflow: hidden;
-
-          
-        }
-
-
-        .trending {
-            display: flex ; 
-           flex-direction: row;
-           padding: 4px;
-           flex-wrap: nowrap;
-           gap: 2;
-           width: 100vw;
-           height: 80%;
-           overflow-x: auto;
-          padding-left: 40px;
-           color: blue;
-          
-        }
-
-        .trend-content {
-            width: 150px;
-            height: 100%;
-            resize: none;
-            flex: 0 0 auto;
-            margin-right: 10px;
-        }
+       
 
         .event-head {
             overflow-y: visible;
@@ -87,15 +64,33 @@
        
 
         .trending {
-           
-           
+          
+           height: auto;
            display: flex !important; 
-           flex-direction: row;
-           gap: 3;
-           overflow-x: scroll;
-         
-           flex-wrap: nowrap;
+           flex-direction: row !important;
+          
+          overflow-x: scroll;
+           flex-wrap: nowrap !important;
+           
+           
         }
+
+
+        .trend-head {
+            width: auto;
+           height: 200px;
+         
+  
+            
+          }
+  
+          .trend-content {
+              width: 290px;
+              height: 25vh;
+              
+              flex: 0 0 auto;
+              margin-right: 15px;
+          }
               
     }
     
@@ -106,19 +101,22 @@
         .trend-head {
           height: 98vh;
           overflow-y: scroll;
-          white-space: nowrap;
+          
         }
 
     }
 
 
-    @media (min-width: 800px) {
+    @media (max-width: 575px) {
 
         .event {
-          width: 40vw !important;
+            width: 98%;
+            
+           
+           }
+      
+
         
-         margin: 0 auto;
-        }
 
     }
 

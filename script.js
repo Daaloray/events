@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var spanElements = document.querySelectorAll('.trend-text');
+ 
+  spanElements.forEach(function(span) {
+    var text = span.textContent;
+   
+  
+    
+    if (text.length > 120) {
+      var truncatedText = text.slice(0, 130) + '... Read more' ;
+      span.textContent = truncatedText ;
+    }
+  });
+});
+
 
  document.addEventListener('DOMContentLoaded', function() {
   var spanElements = document.querySelectorAll('.event-title');

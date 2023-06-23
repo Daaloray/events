@@ -24,13 +24,17 @@
 
       <nav style="background-color: #473497;" class="navbar navbar-dark navbar-expand-md  fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">LUCOM-Events</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+         <!-- <form action="" class="w-100">
+            <input style="display: none;" class="form-control w-100 myinput" type="search" placeholder="Search Event" aria-label="Search">
+          </form> -->
+          <a class="navbar-brand disappear" href="#">LUCOM-Events</a>
+          <button class="navbar-toggler disappear" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon disappear"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="collapse navbar-collapse disappear" id="navbarCollapse">
+            
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
@@ -122,30 +126,52 @@
 
 <div style="margin: 0;"  class="row ">
 
-  <div id="trend-head" class=" container-fluid col-sm-4 themed-grid-col trend-head order-md-2    ">
+  <div id="trend-head" class=" container-fluid col-sm-4 themed-grid-col trend-head order-md-2 px-3   ">
     <h4 class="pt-3">Trending in Lasucom</h4>
-<div class="trending container-fluid m-0 p-0 d-flex flex-lg-column flex-sm-column gap-2  " >
-<div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
-<div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
-<div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
-<div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
-<div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
-<div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
-<div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
-<div class="trend-content container-fluid "><h6 class="trend ">Event Name</h4></div>
+<div class="trending container-fluid m-0 px-1 d-flex flex-lg-column flex-sm-column gap-2  " >
+
+  <div class="trend-content  row  p-0">
+<div class="col-4  trend-img"></div>
+<div class="col-8 trend-text"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small></div>
+</div>
+
+
+<div class="trend-content  row  p-0">
+  <div class="col-4  trend-img"></div>
+  <div class="col-8 trend-text"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small></div>
+  </div>
+
+  <div class="trend-content  row  p-0">
+    <div class="col-4  trend-img"></div>
+    <div class="col-8 trend-text"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small></div>
+    </div>
+
+
+    <div class="trend-content  row  p-0">
+      <div class="col-4  trend-img"></div>
+      <div class="col-8 trend-text"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small></div>
+      </div>
+
+
+      <div class="trend-content  row  p-0">
+        <div class="col-4  trend-img"></div>
+        <div class="col-8 trend-text"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small></div>
+        </div>
+
+
  </div>
   
   </div>
 
   
-  <div class="col-sm-8 themed-grid-col order-md-1 event-head  " id="event-head">
+  <div class="col-sm-8 themed-grid-col order-md-1 event-head p-0  " id="event-head">
 
     <h4 class="py-3">Latest Events Feed</h4>
       <div class="event rounded-3  mb-event-5 ">
   
-      <div class="event-card rounded   ">
+      <div style="background-image: url(./ball.jpg);" class="event-card rounded   ">
       <div class="top  d-flex justify-content-end ">
-          <div data-bs-toggle="tooltip" data-bs-placement="left" title="Date and Time of Event" class="date border-0 bg-white w-auto rounded-3 d-flex flex-column p-2  fw-bold small"> <span class="text-muted event-tiny">Happening On:</span> <small>May 29,<span class="small">7:30pm</span></small></div>
+          <div data-bs-toggle="tooltip" data-bs-placement="left" title="Date and Time of Event" class="date border-0 bg-white w-auto rounded-3 d-flex flex-column py-2 px-3  fw-bold small"> <span class="text-muted event-tiny">Happening On:</span> <small>May 29,<span class="small">7:30pm</span></small></div>
       </div>
       </div>
   
@@ -161,7 +187,7 @@
           <div class="more "><i class="small-icon fa far fa-thin fa-message engage-icon"></i></div>
           </div>
           <div class="content-right d-flex align-items-center gap-1 ">
-            <small class="small "><a href="" data-bs-toggle="modal" data-bs-target="#modalSheet">See Event details</a> </small><i class="small-icon fa fa-light  fa-arrow-right"></i>
+            <small class="small "><a href="" data-bs-toggle="modal" data-bs-target="#modalSheet">See Event details</small><i class="small-icon fa fa-light  fa-arrow-right"></i></a>
           </div>
         </div>
         <div class="bg-white">
@@ -176,9 +202,9 @@
 
       <div class="event rounded-3  mb-event-5 ">
   
-        <div class="event-card rounded   ">
+        <div style="background-image: url(./ball.jpg);"  class="event-card rounded">
         <div class="top  d-flex justify-content-end ">
-            <div data-bs-toggle="tooltip" data-bs-placement="left" title="Date and Time of Event" class="date border-0 bg-white w-auto rounded-3 d-flex flex-column p-2  fw-bold small"> <span class="text-muted event-tiny">Happening On:</span> <small>May 29,<span class="small">7:30pm</span></small></div>
+            <div data-bs-toggle="tooltip" data-bs-placement="left" title="Date and Time of Event" class="date border-0 bg-white w-auto rounded-2 d-flex flex-column  py-2 px-3  fw-bold small"> <span class="text-muted event-tiny">Happening On:</span> <small>May 29,<span class="small">7:30pm</span></small></div>
         </div>
         </div>
     
@@ -194,7 +220,7 @@
             <div class="more "><i class="small-icon fa far fa-thin fa-message engage-icon"></i></div>
             </div>
             <div class="content-right d-flex align-items-center gap-1 ">
-                <small class="small "><a href="" data-bs-toggle="modal" data-bs-target="#modalSheet">See Event details</a> </small><i class="small-icon fa fa-light  fa-arrow-right"></i>
+                <small class="small "><a href="" data-bs-toggle="modal" data-bs-target="#modalSheet">See Event details</small><i class="small-icon fa fa-light  fa-arrow-right"></i></a>
             </div>
           </div>
           <div class="bg-white">
@@ -242,10 +268,10 @@
 
 <div class="footbar">
 
-  <div class="navigate"><i class="fa fa-thin fa-house "></i></div>
-  <div class="navigate"><i class="fa fa-sharp fa-light fa-magnifying-glass "></i></div>
-  <div class="navigate"><i class="fa fa-thin fa-bell"></i></div>
-  <div class="navigate"><i class="fa fa-light fa-list-ul"></i></div>
+  <div class="navigate"><i class=" fas fa fa-thin fa-house "></i></div>
+  <div class="navigate searches"><i class=" fas fa fa-sharp fa-light fa-magnifying-glass glass "></i></div>
+  <div class="navigate"><i class="fas fa fa-thin fa-bell"></i></div>
+  <div class="navigate"><i class="fas fa fa-light fa-list-ul"></i></div>
 
 </div>
 </div>
@@ -273,6 +299,9 @@
 
     
   
+    
+
+    
     <script src="script.js"></script>
     <script src="bootstrap.bundle.min.js"></script>
 </body>

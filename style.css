@@ -25,7 +25,7 @@ body {
 
 a {
   text-decoration: none !important;
-  
+ 
 }
 
 
@@ -34,26 +34,36 @@ a {
 }
 
 
+.trend-img {
+  background-image: url(./ball.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  overflow: hidden;
+  width: auto;
+  margin: 0;
+}
+
+.trend-text {
+  overflow-y: hidden;
+ height: 23vh;
+}
+
 
 
 .trend-content {
    border: none;
-   height: 20vh;
-   padding: 2px;
-  background-image: url(./ball.jpg);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   object-fit: contain;
-   overflow: hidden;
+   height: 23vh;
    width: auto;
    margin: 0;
+   
    transition: transform 0.3s ease;
      
 }
 
  .trend-content:hover {
-  transform: scale(1.02); 
+   transform: scale(1.02);
 }
 
 .footbar {
@@ -82,9 +92,9 @@ a {
      height: auto;
  }
  
- .navigate:focus, .navigate:hover {
-  background-color: #271770 ;
-  color: #FFFF;
+ .navigate:focus, .navigate:hover, .navigate:active {
+  color: #6956be;
+ 
  }
 .event-head {
     overflow-y: scroll;
@@ -93,10 +103,10 @@ a {
 
 
 .event {
-    width: 100%;
+    width: 40vw;
     height: auto;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     border: 1px solid #ccc;
       transition: border-color 0.3s;
       position: relative;
@@ -132,7 +142,7 @@ a {
 }
 
 .event-card{
-    background-image: url(./ball.jpg);
+   
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,7 +170,7 @@ background-color: transparent;
 }
 
 .date{
-padding: 2px;
+
 }
 
 
@@ -176,7 +186,7 @@ margin: 0;
 
   cursor: pointer;
   transition: color 0.3s;
-  
+ 
   
  
 }
