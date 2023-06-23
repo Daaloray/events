@@ -16,3 +16,4 @@ This is the repository for the Campus Aggregator app.
 
 * Step 1: UI/UX mockup
 * Step 2: Building the Frontend Structure of the Mock-Up
+* Step 3: Improving UI/UX structure and Commencement of backend implementation
