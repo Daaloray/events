@@ -25,10 +25,7 @@
     
 
     @media (max-width: 762px) {
-       .father-div { 
-       /*padding-bottom: 20px;*/
       
-       }
 
        .event {
         width: 80%;
@@ -91,6 +88,8 @@
               flex: 0 0 auto;
               margin-right: 15px;
           }
+
+         
               
     }
     

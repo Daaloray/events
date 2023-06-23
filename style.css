@@ -33,9 +33,21 @@ a {
     margin: 0;
 }
 
+.slide-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  overflow: hidden;
+  width: auto;
+  margin: 0;
+  height: auto;
+ 
+}
+
 
 .trend-img {
-  background-image: url(./ball.jpg);
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
