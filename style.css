@@ -43,6 +43,7 @@ a {
   overflow: hidden;
   width: auto;
   margin: 0;
+  height: auto;
 }
 
 .trend-text {
@@ -58,13 +59,11 @@ a {
    width: auto;
    margin: 0;
    
-   transition: transform 0.3s ease;
+  
      
 }
 
- .trend-content:hover {
-   transform: scale(1.02);
-}
+ 
 
 .footbar {
     color: #271770;
