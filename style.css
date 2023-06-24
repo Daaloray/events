@@ -81,6 +81,10 @@ background-color: #FFF;
   
 }
 
+.trend-text > small {
+  line-height: 0;
+}
+
 .overlay-div {
   position: absolute;
   bottom: 0;
@@ -95,13 +99,14 @@ background-color: #FFF;
   box-sizing: border-box;
   cursor: pointer;
   margin: 0;
+  border-bottom-right-radius: 10px;
 }
 
 
 
 .trend-content {
   border: 1px solid #ccc;
-   height: 23.8vh;
+   height: 23.3vh;
    width: auto;
    margin: 0;
    border-radius: 10px;
