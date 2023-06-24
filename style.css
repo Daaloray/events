@@ -208,14 +208,14 @@ background-color: #FFF;
 
 
 
-
-.eventtitle {
+/*
+.event-title {
     overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
       -webkit-line-clamp: 1;
       -webkit-box-orient: vertical;
-}
+}*/
 
 .date {
 position: absolute;
@@ -230,11 +230,19 @@ z-index: 99;
 
 
 
+
+
+
+
 .bottom{
 
 height: 15vh;
 margin: 0;
 
+}
+
+.content-left {
+  color: #271770;
 }
 
 .like-icon {
