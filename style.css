@@ -194,7 +194,6 @@ background-color: #FFF;
 }
 
 .event-card{
-    position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,11 +220,12 @@ background-color: #FFF;
 .date {
 position: absolute;
 top: 0;
-right: 2px;
+right: 0;
 color: rgb(0, 0, 0);
 box-sizing: border-box;
 cursor: pointer;
 transform: translate(-1%, -1%);
+z-index: 99;
 }
 
 
