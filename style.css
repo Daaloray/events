@@ -146,6 +146,12 @@ background-color: #FFF;
   color: #6956be;
  
  }
+
+ .foot-icons {
+   font-size: 20px;
+ }
+
+
 .event-head {
     overflow-y: scroll;
    height: 98vh;
