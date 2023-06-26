@@ -1,9 +1,6 @@
 Tasks
 - Add image loader screen
 - Add website loader
-- Make alternative Card component using img instead of background img
-- Connect Tailwind *
-- Generate Color Theme **
 - Select default background feature
 
 
@@ -318,7 +315,7 @@ body {
   </script>
 </head>
 <body>
-  <div class="navigation">
+  <div class="navigate">
     <span id="home-icon" class="icon">Home</span>
     <span id="search-icon" class="icon">Search</span>
     <span id="notification-icon" class="icon">Notification</span>

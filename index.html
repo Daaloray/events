@@ -1,314 +1,652 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LUCOM:The Official Web App for Events happening in LASUCOM " >
-    <meta name="keywords" content="lasucom, events, lasucom-events, lasucom news">
-    <meta name="author" content="The LUCOM-DEV Team">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="LUCOM:The Official Web App for Events happening in LASUCOM "
+    />
+    <meta
+      name="keywords"
+      content="lasucom, events, lasucom-events, lasucom news"
+    />
+    <meta name="author" content="The LUCOM-DEV Team" />
     <title>LUCOM-EVENT</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="effect.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="effect.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      .search-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #f1f1f1;
+        display: none;
+        z-index: 9999;
+      }
+
+      .notification-popup {
+        position: fixed;
+        top: 50px;
+        right: 10px;
+        width: 200px;
+        background-color: white;
+        border: 1px solid #ccc;
+        display: none;
+        z-index: 1;
+      }
+
+      .more-settings-popup {
+        position: fixed;
+        bottom: 50px;
+        right: 10px;
+        width: 200px;
+        background-color: white;
+        border: 1px solid #ccc;
+        display: none;
+        z-index: 1;
+      }
+    </style>
   </head>
 
+  <body class="m-0">
+    <div class="m-0 father-div">
+      <div class="search-bar">
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search Event"
+            aria-label="Search"
+          />
+          <button
+            style="background-color: rgb(255, 239, 97); color: #101820ff"
+            class="btn d-flex align-items-center gap-1 lucom-color"
+            type="submit"
+          >
+            <span>Search</span>
+            <i
+              class="fas fa fa-sharp fa-light fa-magnifying-glass lucom-color"
+            ></i>
+          </button>
+        </form>
+      </div>
 
-<body class="m-0">
-    
-    <div class="m-0  father-div "> 
+      <div class="notification-popup"> notifications here
+      </div>
 
+      <div class="more-settings-popup">More Settings Popup</div>
 
-      <nav style="background-color: #271770;" class="navbar navbar-dark navbar-expand-md  fixed-top">
+      <nav
+        style="background-color: #271770"
+        class="navbar navbar-dark navbar-expand-md fixed-top"
+      >
         <div class="container-fluid">
-         <!-- <form action="" class="w-100">
+          <!-- <form action="" class="w-100">
             <input style="display: none;" class="form-control w-100 myinput" type="search" placeholder="Search Event" aria-label="Search">
           </form> -->
-          <a style="font-size: medium;" class="navbar-brand disappear " href="#">LUCOM-Events</a>
-          <button class="navbar-toggler disappear" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <a style="font-size: medium" class="navbar-brand disappear" href="#"
+            >LUCOM-Events</a
+          >
+          <button
+            class="navbar-toggler disappear"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon disappear"></span>
           </button>
           <div class="collapse navbar-collapse disappear" id="navbarCollapse">
-            
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item ">
+              <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#event-head">Events</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#trend-head">Trending</a>
+                <a class="nav-link" href="#trend-head">Trending</a>
               </li>
             </ul>
             <form class="d-flex">
-              <input  class="form-control me-2 " type="search" placeholder="Search Event" aria-label="Search">
-              <button style="background-color: rgb(255, 239, 97); color: #101820FF ;"  class="btn d-flex align-items-center gap-1 lucom-color " type="submit"><span>Search</span> <i class=" fas fa fa-sharp fa-light fa-magnifying-glass lucom-color   "></i></button>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search Event"
+                aria-label="Search"
+              />
+              <button
+                style="background-color: rgb(255, 239, 97); color: #101820ff"
+                class="btn d-flex align-items-center gap-1 lucom-color"
+                type="submit"
+              >
+                <span>Search</span>
+                <i
+                  class="fas fa fa-sharp fa-light fa-magnifying-glass lucom-color"
+                ></i>
+              </button>
             </form>
           </div>
         </div>
       </nav>
 
-
-    
-
-      <main  class=" container-fluid m-0 p-0">
-
+      <main class="container-fluid m-0 p-0">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
           </div>
 
-          <div  class="carousel-inner">
-            <div style="background-image: url(./ball.jpg);" class="carousel-item active slide-img">
-              
+          <div class="carousel-inner">
+            <div
+              style="background-image: url(./ball.jpg)"
+              class="carousel-item active slide-img"
+            >
               <div class="container">
                 <div class="carousel-caption text-start">
                   <h1>Provost Cup starts tomorrow.</h1>
-                  <p>This is to inform all students of the college of medicine that the provost cup is about to start</p>
-                  <p><a class="btn btn-lucom-1 btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#modalSheet">Read more <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+                  <p>
+                    This is to inform all students of the college of medicine
+                    that the provost cup is about to start
+                  </p>
+                  <p>
+                    <a
+                      class="btn btn-lucom-1 btn-lg"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalSheet"
+                      >Read more
+                      <i class="fa fa-angle-right" aria-hidden="true"></i
+                    ></a>
+                  </p>
                 </div>
               </div>
             </div>
 
-
-            <div style="background-image: url(./ball.jpg);" class="carousel-item  slide-img">
-              
+            <div
+              style="background-image: url(./ball.jpg)"
+              class="carousel-item slide-img"
+            >
               <div class="container">
-                <div class="carousel-caption text-start ">
+                <div class="carousel-caption text-start">
                   <h1>The Quintessentials induction is next month.</h1>
-                  <p>We are glad to announce the induction program for our final students</p>
-                  <p><a class="btn btn-lucom-1 btn-lg " href="#" data-bs-toggle="modal" data-bs-target="#modalSheet" >Read more <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+                  <p>
+                    We are glad to announce the induction program for our final
+                    students
+                  </p>
+                  <p>
+                    <a
+                      class="btn btn-lucom-1 btn-lg"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalSheet"
+                      >Read more
+                      <i class="fa fa-angle-right" aria-hidden="true"></i
+                    ></a>
+                  </p>
                 </div>
               </div>
             </div>
 
-
-            <div style="background-image: url(./ball.jpg);" class="carousel-item slide-img">
-              
+            <div
+              style="background-image: url(./ball.jpg)"
+              class="carousel-item slide-img"
+            >
               <div class="container">
                 <div class="carousel-caption text-end">
                   <h1>Today is the Provost's Birthday.</h1>
                   <p>Happy birthday to Prof. Adewuya!</p>
-                  <p><a class="btn btn-lucom-1 btn-lg " href="#" data-bs-toggle="modal" data-bs-target="#modalSheet">Read more <i class="fa fa-angle-right" aria-hidden="true"></i></a></p>
+                  <p>
+                    <a
+                      class="btn btn-lucom-1 btn-lg"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalSheet"
+                      >Read more
+                      <i class="fa fa-angle-right" aria-hidden="true"></i
+                    ></a>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-
-
         </div>
-    </main>
+      </main>
 
-<!--end of our carousel-->
+      <!--end of our carousel-->
 
+      <div class="row m-0 pt-3">
+        <div
+          id="trend-head"
+          class="container-fluid col-sm-4 themed-grid-col trend-head order-md-2 px-3"
+        >
+          <h6 class="pt-2">Trending Events in Lasucom</h6>
+          <div
+            class="trending container-fluid m-0 px-1 d-flex flex-lg-column flex-sm-column gap-md-4"
+          >
+            <div class="trend-content row p-0">
+              <div
+                style="background-image: url(./ball.jpg)"
+                class="col-6 trend-img"
+              ></div>
+              <div class="col-6 trend-text m-0 px-1">
+                <small
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maxime, nemo architecto possimus sunt dolorem atque magnam eum
+                  reiciendis inventore! Suscipit error nobis ratione recusandae
+                  beatae, iste ex velit minus ipsum.</small
+                >
+                <div class="overlay-div m-0 p-2">
+                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                    >Read more
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </small>
+                </div>
+              </div>
+            </div>
 
+            <div class="trend-content row p-0">
+              <div
+                style="background-image: url(./ball.jpg)"
+                class="col-6 trend-img"
+              ></div>
+              <div class="col-6 trend-text m-0 px-2">
+                <small
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maxime, nemo architecto possimus sunt dolorem atque magnam eum
+                  reiciendis inventore! Suscipit error nobis ratione recusandae
+                  beatae, iste ex velit minus ipsum.</small
+                >
+                <div class="overlay-div m-0 p-2">
+                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                    >Read more
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </small>
+                </div>
+              </div>
+            </div>
 
+            <div class="trend-content row p-0">
+              <div
+                style="background-image: url(./ball.jpg)"
+                class="col-6 trend-img"
+              ></div>
+              <div class="col-6 trend-text m-0 px-2">
+                <small
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maxime, nemo architecto possimus sunt dolorem atque magnam eum
+                  reiciendis inventore! Suscipit error nobis ratione recusandae
+                  beatae, iste ex velit minus ipsum.</small
+                >
+                <div class="overlay-div m-0 p-2">
+                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                    >Read more
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </small>
+                </div>
+              </div>
+            </div>
 
+            <div class="trend-content row p-0">
+              <div
+                style="background-image: url(./ball.jpg)"
+                class="col-6 trend-img"
+              ></div>
+              <div class="col-6 trend-text m-0 px-2">
+                <small
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maxime, nemo architecto possimus sunt dolorem atque magnam eum
+                  reiciendis inventore! Suscipit error nobis ratione recusandae
+                  beatae, iste ex velit minus ipsum.</small
+                >
+                <div class="overlay-div m-0 p-2">
+                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                    >Read more
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </small>
+                </div>
+              </div>
+            </div>
 
-<div   class="row m-0 pt-3 ">
-
-  <div id="trend-head" class=" container-fluid col-sm-4 themed-grid-col trend-head order-md-2 px-3   ">
-    <h6 class="pt-2">Trending Events in Lasucom</h6>
-<div class="trending container-fluid m-0 px-1 d-flex flex-lg-column flex-sm-column gap-md-4  " >
-
-  <div class="trend-content  row  p-0">
-<div style="background-image: url(./ball.jpg);" class="col-6  trend-img"></div>
-<div class="col-6 trend-text m-0 px-1"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small>
-<div class="overlay-div m-0 p-2 "><small data-bs-toggle="modal" data-bs-target="#modalSheet">Read more <i class="fa fa-angle-right" aria-hidden="true"></i> </small></div>
-</div>
-</div>
-
-
-<div class="trend-content  row  p-0">
-  <div style="background-image: url(./ball.jpg);" class="col-6  trend-img"></div>
-  <div class="col-6 trend-text m-0 px-2"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small>
-    <div class="overlay-div m-0 p-2 "><small data-bs-toggle="modal" data-bs-target="#modalSheet">Read more <i class="fa fa-angle-right" aria-hidden="true"></i> </small></div>
-  </div>
-  </div>
-
-  <div class="trend-content  row  p-0">
-    <div style="background-image: url(./ball.jpg);" class="col-6  trend-img"></div>
-    <div class="col-6 trend-text m-0 px-2"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small>
-      <div class="overlay-div m-0 p-2 "><small data-bs-toggle="modal" data-bs-target="#modalSheet">Read more <i class="fa fa-angle-right" aria-hidden="true"></i> </small></div>
-    </div>
-    </div>
-
-
-    <div class="trend-content  row  p-0">
-      <div style="background-image: url(./ball.jpg);" class="col-6  trend-img"></div>
-      <div class="col-6 trend-text m-0 px-2"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small>
-        <div class="overlay-div m-0 p-2 "><small data-bs-toggle="modal" data-bs-target="#modalSheet">Read more <i class="fa fa-angle-right" aria-hidden="true"></i> </small></div>
-      </div>
-      </div>
-
-
-      <div class="trend-content  row  p-0">
-        <div style="background-image: url(./ball.jpg);" class="col-6  trend-img"></div>
-        <div class="col-6 trend-text m-0 px-2"><small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, nemo architecto possimus sunt dolorem atque magnam eum reiciendis inventore! Suscipit error nobis ratione recusandae beatae, iste ex velit minus ipsum.</small>
-          <div class="overlay-div m-0 p-2 "><small data-bs-toggle="modal" data-bs-target="#modalSheet">Read more <i class="fa fa-angle-right" aria-hidden="true"></i> </small></div>
-        </div>
-        </div>
-
-
- </div>
-  
-  </div>
-
-  
-  <div class="col-sm-8 themed-grid-col order-md-1 event-head p-0 mt-4  " id="event-head">
-
-    <h6 style="padding-left: 1rem;" class=" pt-3 pb-2 fw-bolder">UPCOMING-EVENTS FEED</h6>
-      <div class="event rounded-3  mb-event-5  ">
-        <div data-bs-toggle="tooltip" data-bs-placement="left" title="Date and Time of Event" class="date  bg-white w-auto rounded-2 d-flex flex-column py-2 px-2  fw-bold small"> <span style="letter-spacing: 1px;" class="lucom-color event-tiny">Happening On:</span> <small>December 29<span class="small">, 7:30pm</span></small></div>
-      
-      <div style="background-image: url(./ball.jpg);" class="event-card rounded   ">
-      
-          
-      </div>
-  
-      <div class="bottom  rounded-3   h-auto">
-        <div class="top d-flex justify-content-start ">
-        <div class="event-title-header  w-100  bg-white  p-2 ">
-        <span class=" event-title fw-bold text-uppercase ">NIGERIAN INDEPENDENCE DAY</span>
-        </div>
-        </div>
-        <div class="d-flex justify-content-between align-items-center bg-white p-2   ">
-          <div class="content-left d-flex gap-lg-4 gap-3   px-2 ">
-              <div class="engage d-flex gap-1 align-items-center "><i class="small-icon fa far fa-thin fa-heart like-icon"></i><span class="small-icon-text">100</span></div>
-          <div class="more "><i class="small-icon fa far fa-thin fa-message engage-icon"></i></div>
+            <div class="trend-content row p-0">
+              <div
+                style="background-image: url(./ball.jpg)"
+                class="col-6 trend-img"
+              ></div>
+              <div class="col-6 trend-text m-0 px-2">
+                <small
+                  >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Maxime, nemo architecto possimus sunt dolorem atque magnam eum
+                  reiciendis inventore! Suscipit error nobis ratione recusandae
+                  beatae, iste ex velit minus ipsum.</small
+                >
+                <div class="overlay-div m-0 p-2">
+                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                    >Read more
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </small>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="content-right d-flex align-items-center gap-1 ">
-        <a href="" class="btn btn-sm btn-lucom-2 rounded-2" data-bs-toggle="modal" data-bs-target="#modalSheet"><small>See Event details <i class="fa fa-angle-right" aria-hidden="true"></i></small></a>
+        </div>
+
+        <div
+          class="col-sm-8 themed-grid-col order-md-1 event-head p-0 mt-4"
+          id="event-head"
+        >
+          <h6 style="padding-left: 1rem" class="pt-3 pb-2 fw-bolder">
+            UPCOMING-EVENTS FEED
+          </h6>
+          <div class="event rounded-3 mb-event-5">
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="left"
+              title="Date and Time of Event"
+              class="date bg-white w-auto rounded-2 d-flex flex-column py-2 px-2 fw-bold small"
+            >
+              <span style="letter-spacing: 1px" class="lucom-color event-tiny"
+                >Happening On:</span
+              >
+              <small>December 29<span class="small">, 7:30pm</span></small>
+            </div>
+
+            <div
+              style="background-image: url(./ball.jpg)"
+              class="event-card rounded"
+            ></div>
+
+            <div class="bottom rounded-3 h-auto">
+              <div class="top d-flex justify-content-start">
+                <div class="event-title-header w-100 bg-white p-2">
+                  <span class="event-title fw-bold text-uppercase"
+                    >NIGERIAN INDEPENDENCE DAY</span
+                  >
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center bg-white p-2"
+              >
+                <div class="content-left d-flex gap-lg-4 gap-3 px-2">
+                  <div class="engage d-flex gap-1 align-items-center">
+                    <i class="small-icon fa far fa-thin fa-heart like-icon"></i
+                    ><span class="small-icon-text">100</span>
+                  </div>
+                  <div class="more">
+                    <i
+                      class="small-icon fa far fa-thin fa-message engage-icon"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content-right d-flex align-items-center gap-1">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-lucom-2 rounded-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalSheet"
+                    ><small
+                      >See Event details
+                      <i
+                        class="fa fa-angle-right"
+                        aria-hidden="true"
+                      ></i></small
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-white m-0 ps-2 time-posted">
+                <p class="text-muted event-txt-sm">Posted 3 mins ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="event rounded-3 mb-event-5">
+            <div
+              data-bs-toggle="tooltip"
+              data-bs-placement="left"
+              title="Date and Time of Event"
+              class="date bg-white w-auto rounded-2 d-flex flex-column py-2 px-2 fw-bold small"
+            >
+              <span style="letter-spacing: 1px" class="lucom-color event-tiny"
+                >Happening On:</span
+              >
+              <small>May 29<span class="small">, 12:59pm</span></small>
+            </div>
+
+            <div
+              style="background-image: url(./ball.jpg)"
+              class="event-card rounded"
+            ></div>
+
+            <div class="bottom rounded-3 h-auto">
+              <div class="top d-flex justify-content-start">
+                <div class="event-title-header w-100 bg-white p-2">
+                  <span class="event-title fw-bold text-uppercase"
+                    >NIGERIAN INDEPENDENCE DAY</span
+                  >
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center bg-white p-2"
+              >
+                <div class="content-left d-flex gap-lg-4 gap-3 px-2">
+                  <div class="engage d-flex gap-1 align-items-center">
+                    <i class="small-icon fa far fa-thin fa-heart like-icon"></i
+                    ><span class="small-icon-text">100</span>
+                  </div>
+                  <div class="more">
+                    <i
+                      class="small-icon fa far fa-thin fa-message engage-icon"
+                    ></i>
+                  </div>
+                </div>
+                <div class="content-right d-flex align-items-center gap-1">
+                  <a
+                    href=""
+                    class="btn btn-sm btn-lucom-2 rounded-2"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalSheet"
+                    ><small
+                      >See Event details
+                      <i
+                        class="fa fa-angle-right"
+                        aria-hidden="true"
+                      ></i></small
+                  ></a>
+                </div>
+              </div>
+              <div class="bg-white m-0 ps-2 time-posted">
+                <p class="text-muted event-txt-sm">Posted 3 mins ago</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="bg-white m-0 ps-2  time-posted ">
-          <p class="text-muted event-txt-sm">Posted 3 mins ago</p>
-        </div>
-        
       </div>
 
-      </div>
-
-
-
-      <div class="event rounded-3  mb-event-5  ">
-        <div data-bs-toggle="tooltip" data-bs-placement="left" title="Date and Time of Event" class="date  bg-white w-auto rounded-2 d-flex flex-column py-2 px-2  fw-bold small"> <span style="letter-spacing: 1px;" class="lucom-color event-tiny">Happening On:</span> <small>May 29<span class="small">, 12:59pm</span></small></div>
-      
-      <div style="background-image: url(./ball.jpg);" class="event-card rounded   ">
-      
-          
-      </div>
-  
-      <div class="bottom  rounded-3   h-auto">
-        <div class="top d-flex justify-content-start ">
-        <div class="event-title-header  w-100  bg-white  p-2 ">
-        <span class=" event-title fw-bold text-uppercase ">NIGERIAN INDEPENDENCE DAY</span>
-        </div>
-        </div>
-        <div class="d-flex justify-content-between align-items-center bg-white p-2   ">
-          <div class="content-left d-flex gap-lg-4 gap-3   px-2 ">
-              <div class="engage d-flex gap-1 align-items-center "><i class="small-icon fa far fa-thin fa-heart like-icon"></i><span class="small-icon-text">100</span></div>
-          <div class="more "><i class="small-icon fa far fa-thin fa-message engage-icon"></i></div>
-          </div>
-          <div class="content-right d-flex align-items-center gap-1 ">
-        <a href="" class="btn btn-sm btn-lucom-2 rounded-2" data-bs-toggle="modal" data-bs-target="#modalSheet"><small>See Event details <i class="fa fa-angle-right" aria-hidden="true"></i></small></a>
-          </div>
-        </div>
-        <div class="bg-white m-0  ps-2  time-posted ">
-          <p class="text-muted event-txt-sm">Posted 3 mins ago</p>
-        </div>
-        
-      </div>
-
-      </div>
-
-
-
-
-      
-
-     
-
-
-
-
-     
-
-
-
-  
-     </div>
-
-  </div>
-
-
-
-
-
-  <!-- <div class=" d-flex justify-content-end create-event fixed-bottom rounded-circle h-50 w-50 bg-danger ">
+      <!-- <div class=" d-flex justify-content-end create-event fixed-bottom rounded-circle h-50 w-50 bg-danger ">
     <span>+</span>
   </div>-->
-          <div class="fixed-bottom  ">
-            
-              <button type="button" class=" fixed-bottoms create-button " data-bs-toggle="tooltip" data-bs-placement="left" title="Create Event">
-               <i class=" fa fa-light fa-plus create-icon "></i>
-              </button>
-            
-            
+      <div class="fixed-bottom">
+        <button
+          type="button"
+          class="fixed-bottoms create-button"
+          data-bs-toggle="tooltip"
+          data-bs-placement="left"
+          title="Create Event"
+        >
+          <i class="fa fa-light fa-plus create-icon"></i>
+        </button>
 
-
-<div class="footbar">
-
-  <div class="navigate"><i class=" fas fa fa-thin fa-house foot-icons "></i></div>
-  <div class="navigate searches"><i class=" fas fa fa-sharp fa-light fa-magnifying-glass glass foot-icons "></i></div>
-  <div class="navigate"><i class="fas fa fa-thin fa-bell foot-icons"></i></div>
-  <div class="navigate"><i class="fas fa fa-light fa-list-ul foot-icons"></i></div>
-
-</div>
-</div>
-
-
-
+        <div class="footbar">
+          <div class="navigate">
+            <i id="home-icon" class="fas fa fa-thin fa-house foot-icons"></i>
+          </div>
+          <div class="navigate searches">
+            <i
+              id="search-icon"
+              class="fas fa fa-sharp fa-light fa-magnifying-glass glass foot-icons"
+            ></i>
+          </div>
+          <div class="navigate">
+            <i
+              id="notification-icon"
+              class="fas fa fa-thin fa-bell foot-icons"
+            ></i>
+          </div>
+          <div class="navigate">
+            <i
+              id="more-settings-icon"
+              class="fas fa fa-light fa-list-ul foot-icons"
+            ></i>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="modal  fade"  role="dialog" id="modalSheet" >
+    <div class="modal fade" role="dialog" id="modalSheet">
       <div class="modal-dialog" role="document">
         <div class="modal-content rounded-4 shadow">
           <div class="modal-header border-bottom-0">
-            <h1 class="modal-title fs-5 lucom-color">NIGERIAN INDEPENDENCE DAY</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5 lucom-color">
+              NIGERIAN INDEPENDENCE DAY
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body event-details py-0">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aspernatur iusto ipsa iure, ratione veniam. Nihil cupiditate eligendi unde voluptatum ipsam earum nobis? Laudantium, quis molestias non quisquam tenetur quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestiae sit, voluptates reiciendis a iure vel ipsa officia beatae, qui, illo laboriosam quis odio. Officia corrupti nam quo quam vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ullam magni dolore nisi distinctio dolores, optio ab fugiat reprehenderit adipisci eveniet beatae deserunt itaque nihil velit incidunt consequatur placeat. Doloremque..</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
+              aspernatur iusto ipsa iure, ratione veniam. Nihil cupiditate
+              eligendi unde voluptatum ipsam earum nobis? Laudantium, quis
+              molestias non quisquam tenetur quam? Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Fuga molestiae sit, voluptates
+              reiciendis a iure vel ipsa officia beatae, qui, illo laboriosam
+              quis odio. Officia corrupti nam quo quam vero. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Voluptatum ullam magni
+              dolore nisi distinctio dolores, optio ab fugiat reprehenderit
+              adipisci eveniet beatae deserunt itaque nihil velit incidunt
+              consequatur placeat. Doloremque..
+            </p>
           </div>
           <div class="modal-footer flex-column border-top-0">
-           
-            <button type="button" class="btn btn-lg btn-lucom-2 w-100 mx-0" data-bs-dismiss="modal">Ok</button>
+            <button
+              type="button"
+              class="btn btn-lg btn-lucom-2 w-100 mx-0"
+              data-bs-dismiss="modal"
+            >
+              Ok
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    
-  
-    
-
-    
     <script src="script.js"></script>
     <script src="bootstrap.bundle.min.js"></script>
-</body>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var homeIcon = document.querySelector("#home-icon");
+        var searchIcon = document.querySelector("#search-icon");
+        var notificationIcon = document.querySelector("#notification-icon");
+        var moreSettingsIcon = document.querySelector("#more-settings-icon");
+        var searchBar = document.querySelector(".search-bar");
+        var notificationPopup = document.querySelector(".notification-popup");
+        var moreSettingsPopup = document.querySelector(".more-settings-popup");
+
+        homeIcon.addEventListener("click", function () {
+          scrollToTop();
+          closeMenus();
+        });
+
+        searchIcon.addEventListener("click", function () {
+          closeMenus();
+          searchBar.style.display = "block";
+        });
+
+        notificationIcon.addEventListener("click", function () {
+          closeMenus();
+          notificationPopup.style.display = "block";
+        });
+
+        moreSettingsIcon.addEventListener("click", function () {
+          moreSettingsPopup.style.display = "block";
+        });
+
+        document.addEventListener("click", function (event) {
+          var target = event.target;
+          if (
+            !target.closest(".more-settings-popup") &&
+            !target.closest("#more-settings-icon")
+          ) {
+            moreSettingsPopup.style.display = "none";
+          }
+        });
+
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+
+        function closeMenus() {
+          searchBar.style.display = "none";
+          notificationPopup.style.display = "none";
+        }
+      });
+    </script>
+  </body>
 </html>
