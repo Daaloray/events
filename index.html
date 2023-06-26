@@ -18,136 +18,41 @@
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="media.css" />
     <link rel="stylesheet" href="effect.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-
-    <style>
-      .search-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50px;
-        background-color: #f1f1f1;
-        display: none;
-        z-index: 9999;
-      }
-
-      .notification-popup {
-        position: fixed;
-        top: 50px;
-        right: 10px;
-        width: 200px;
-        background-color: white;
-        border: 1px solid #ccc;
-        display: none;
-        z-index: 1;
-      }
-
-      .more-settings-popup {
-        position: fixed;
-        bottom: 50px;
-        right: 10px;
-        width: 200px;
-        background-color: white;
-        border: 1px solid #ccc;
-        display: none;
-        z-index: 1;
-      }
-
-       
-      .preloader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f1f1f1;
-      z-index: 9999;
-    }
-
-    .logo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background-color: #ffffff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .ring {
-      width: 100px;
-      height: 100px;
-      border: 10px solid transparent;
-      border-top-color: purple;
-      border-radius: 50%;
-      animation: spin 1s infinite linear;
-    }
-
-    @keyframes spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   </head>
 
   <body class="m-0">
 
+
     <div class="preloader">
       <div class="logo">
-        <img src="./ball.jpg" alt="nothing" height="20px" width="20px">
         <div class="ring"></div>
       </div>
     </div>
-  
-    <!-- Your website content goes here -->
+
+    
+    <div class="father-div    m-0">
 
 
-    <div class="m-0 father-div">
       <div class="search-bar">
         <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search Event"
-            aria-label="Search"
-          />
-          <button
-            style="background-color: rgb(255, 239, 97); color: #101820ff"
-            class="btn d-flex align-items-center gap-1 lucom-color"
-            type="submit"
-          >
-            <span>Search</span>
-            <i
-              class="fas fa fa-sharp fa-light fa-magnifying-glass lucom-color"
-            ></i>
-          </button>
+          <input class="form-control-lg w-100 me-2" type="search" placeholder="Search Event" aria-label="Search"/>
         </form>
       </div>
 
-      <div class="notification-popup"> notifications here
-      </div>
 
+      <div class="notification-popup">notifications here</div>
       <div class="more-settings-popup">More Settings Popup</div>
+
+
+
 
       <nav
         style="background-color: #271770"
         class="navbar navbar-dark navbar-expand-md fixed-top"
       >
         <div class="container-fluid">
-          <!-- <form action="" class="w-100">
-            <input style="display: none;" class="form-control w-100 myinput" type="search" placeholder="Search Event" aria-label="Search">
-          </form> -->
+        
           <a style="font-size: medium" class="navbar-brand disappear" href="#"
             >LUCOM-Events</a
           >
@@ -182,7 +87,7 @@
                 aria-label="Search"
               />
               <button
-                style="background-color: rgb(255, 239, 97); color: #101820ff"
+                style="background-color: yellow; color: #101820ff"
                 class="btn d-flex align-items-center gap-1 lucom-color"
                 type="submit"
               >
@@ -195,6 +100,10 @@
           </div>
         </div>
       </nav>
+
+
+
+
 
       <main class="container-fluid m-0 p-0">
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -235,7 +144,7 @@
                   </p>
                   <p>
                     <a
-                      class="btn btn-lucom-1 btn-lg"
+                      class="btn btn-lucom-1 btn-lg slide-link"
                       href="#"
                       data-bs-toggle="modal"
                       data-bs-target="#modalSheet"
@@ -260,7 +169,7 @@
                   </p>
                   <p>
                     <a
-                      class="btn btn-lucom-1 btn-lg"
+                      class="btn btn-lucom-1 btn-lg slide-link"
                       href="#"
                       data-bs-toggle="modal"
                       data-bs-target="#modalSheet"
@@ -282,7 +191,7 @@
                   <p>Happy birthday to Prof. Adewuya!</p>
                   <p>
                     <a
-                      class="btn btn-lucom-1 btn-lg"
+                      class="btn btn-lucom-1 btn-lg slide-link"
                       href="#"
                       data-bs-toggle="modal"
                       data-bs-target="#modalSheet"
@@ -318,7 +227,15 @@
 
       <!--end of our carousel-->
 
+
+
+
+
+
+
       <div class="row m-0 pt-3">
+
+
         <div
           id="trend-head"
           class="container-fluid col-sm-4 themed-grid-col trend-head order-md-2 px-3"
@@ -339,8 +256,12 @@
                   reiciendis inventore! Suscipit error nobis ratione recusandae
                   beatae, iste ex velit minus ipsum.</small
                 >
-                <div class="overlay-div m-0 p-2">
-                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                <div
+                  class="overlay-div m-0 p-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSheet"
+                >
+                  <small
                     >Read more
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </small>
@@ -360,8 +281,12 @@
                   reiciendis inventore! Suscipit error nobis ratione recusandae
                   beatae, iste ex velit minus ipsum.</small
                 >
-                <div class="overlay-div m-0 p-2">
-                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                <div
+                  class="overlay-div m-0 p-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSheet"
+                >
+                  <small
                     >Read more
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </small>
@@ -381,8 +306,12 @@
                   reiciendis inventore! Suscipit error nobis ratione recusandae
                   beatae, iste ex velit minus ipsum.</small
                 >
-                <div class="overlay-div m-0 p-2">
-                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                <div
+                  class="overlay-div m-0 p-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSheet"
+                >
+                  <small
                     >Read more
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </small>
@@ -402,8 +331,12 @@
                   reiciendis inventore! Suscipit error nobis ratione recusandae
                   beatae, iste ex velit minus ipsum.</small
                 >
-                <div class="overlay-div m-0 p-2">
-                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                <div
+                  class="overlay-div m-0 p-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSheet"
+                >
+                  <small
                     >Read more
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </small>
@@ -423,8 +356,12 @@
                   reiciendis inventore! Suscipit error nobis ratione recusandae
                   beatae, iste ex velit minus ipsum.</small
                 >
-                <div class="overlay-div m-0 p-2">
-                  <small data-bs-toggle="modal" data-bs-target="#modalSheet"
+                <div
+                  class="overlay-div m-0 p-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSheet"
+                >
+                  <small
                     >Read more
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                   </small>
@@ -433,6 +370,12 @@
             </div>
           </div>
         </div>
+
+
+
+
+
+
 
         <div
           class="col-sm-8 themed-grid-col order-md-1 event-head p-0 mt-4"
@@ -565,9 +508,10 @@
         </div>
       </div>
 
-      <!-- <div class=" d-flex justify-content-end create-event fixed-bottom rounded-circle h-50 w-50 bg-danger ">
-    <span>+</span>
-  </div>-->
+     
+
+
+
       <div class="fixed-bottom">
         <button
           type="button"
@@ -604,6 +548,12 @@
         </div>
       </div>
     </div>
+
+
+
+
+
+
     <div class="modal fade" role="dialog" id="modalSheet">
       <div class="modal-dialog" role="document">
         <div class="modal-content rounded-4 shadow">
@@ -646,24 +596,19 @@
       </div>
     </div>
 
+
+
+
+
     <script src="script.js"></script>
     <script src="bootstrap.bundle.min.js"></script>
+
+
 
     <script>
      
 
-     window.addEventListener('load', function() {
-      var preloader = document.querySelector('.preloader');
-      preloader.style.display = 'none';
-    });
-     
-     
-     
-     
-     
-     
-     
-     document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
         var homeIcon = document.querySelector("#home-icon");
         var searchIcon = document.querySelector("#search-icon");
         var notificationIcon = document.querySelector("#notification-icon");

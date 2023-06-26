@@ -11,11 +11,6 @@
 }
 
 
-
-
-
-
-
 body {
     margin: 0;
     padding: 0;
@@ -27,17 +22,101 @@ body {
   color: #271770;
 }
 
-
 a {
   text-decoration: none !important;
- 
+ }
+
+
+
+
+
+
+/*Bottom Navigation menus and pop-ups*/
+
+.search-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #f1f1f1;
+  display: none;
+  z-index: 9999;
 }
 
+.notification-popup {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: none;
+  z-index: 1;
+}
+
+.more-settings-popup {
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  display: none;
+  z-index: 1;
+}
+
+
+
+/*Preloader*/
+ 
+.preloader {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f1f1f1;
+z-index: 9999;
+}
+
+.logo {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+background-image: url(./ball.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+object-fit: contain;
+overflow: hidden;
+
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ring {
+width: 100px;
+height: 100px;
+border: 7px solid transparent;
+border-top-color: purple;
+border-radius: 50%;
+animation: spin 1s infinite linear;
+}
+
+
+
+
+/* Main Website Content*/
 
 .father-div {
     margin: 0;
 }
 
+
+/*slideshow*/
 .slide-img {
   background-position: center;
   background-repeat: no-repeat;
@@ -50,17 +129,29 @@ a {
  
 }
 
+
+.slide-link {
+  font-size: 16px !important;
+}
+
+
+
+
+
+/*Events and trend section, the classes for these have been specified*/
+
 .row {
 background-color: #FFF;
 }
 
+
+/*trends section*/
 
 .trend-head {
   background-color: #FFF;
 }
 
 .trend-img {
-  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -109,15 +200,140 @@ background-color: #FFF;
    height: 23.3vh;
    width: auto;
    margin: 0;
-   border-radius: 10px;
-  
-
-  
-  
-     
+   border-radius: 10px;     
 }
 
  
+
+
+/*Events Section*/
+
+.event-head {
+  overflow-y: scroll;
+ height: 98vh;
+ background-color: #FFF;
+}
+
+
+.event {
+  width: 40vw;
+  height: auto;
+  padding: 0;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+    transition: border-color 0.3s;
+    position: relative;
+ overflow: hidden;
+  
+}
+
+.event:hover, .event:focus {
+  border-color: #271770;
+    box-shadow: 0 0 12px #271770;
+}
+
+.event::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 1px solid transparent;
+  z-index: -1;
+  transition: border-color 0.3s;
+  
+}
+
+.event:hover::before,
+.event:focus::before {
+border-color: #271770;
+box-shadow: 0 0 1px #271770;
+}
+
+.event-card:hover {
+transform: scale(1.02); /* Adjust the scale value for desired zoom effect */
+}
+
+.event-card{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  overflow: hidden;
+  width: auto;
+  height: 35vh;
+  margin: 0;
+  transition: transform 0.3s ease;
+  
+}
+
+
+
+
+
+.date {
+position: absolute;
+top: 0;
+right: 0;
+color: rgb(0, 0, 0);
+box-sizing: border-box;
+cursor: pointer;
+transform: translate(-1%, -1%);
+z-index: 99;
+}
+
+
+.bottom{
+height: 15vh;
+margin: 0;
+}
+
+.content-left {
+color: #271770;
+}
+
+.like-icon {
+cursor: pointer;
+transition: color 0.3s;
+}
+
+.like-icon.liked {
+color: red;
+text-shadow: 0 0 13px red;
+}
+
+
+.event-details {
+max-height: 66vh;
+overflow-y: scroll;
+}
+
+
+/*Create events button*/
+
+.create-button {
+   
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 6px 7px 40px -4px
+         rgb(155, 130, 184);
+ background: #271770;
+ animation: pulsate 1.5s ease-in-out infinite;
+ 
+}
+
+
+.create-icon {
+font-style: normal;
+font-size: 20px;
+}
 
 .footbar {
     color: #271770;
@@ -130,8 +346,6 @@ background-color: #FFF;
  }
 
 
- 
- 
  .footbar div {
      
      width:25%;
@@ -152,201 +366,62 @@ background-color: #FFF;
  }
 
 
-.event-head {
-    overflow-y: scroll;
-   height: 98vh;
-   background-color: #FFF;
-}
 
 
-.event {
-    width: 40vw;
-    height: auto;
-    padding: 0;
-    margin: 0 auto;
-    border: 1px solid #ccc;
-      transition: border-color 0.3s;
-      position: relative;
-   overflow: hidden;
-    
-}
-
-.event:hover, .event:focus {
-    border-color: #271770;
-      box-shadow: 0 0 12px #271770;
-}
-
-.event::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    border: 1px solid transparent;
-    z-index: -1;
-    transition: border-color 0.3s;
-    
-}
-
-.event:hover::before,
-.event:focus::before {
-  border-color: #271770;
-  box-shadow: 0 0 1px #271770;
-}
-
-.event-card:hover {
-  transform: scale(1.02); /* Adjust the scale value for desired zoom effect */
-}
-
-.event-card{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    overflow: hidden;
-    width: auto;
-    height: 35vh;
-    margin: 0;
-    transition: transform 0.3s ease;
-    
-}
-
-
-
-/*
-.event-title {
-    overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-}*/
-
-.date {
-position: absolute;
-top: 0;
-right: 0;
-color: rgb(0, 0, 0);
-box-sizing: border-box;
-cursor: pointer;
-transform: translate(-1%, -1%);
-z-index: 99;
-}
-
-
-
-
-
-
-
-.bottom{
-
-height: 15vh;
-margin: 0;
-
-}
-
-.content-left {
-  color: #271770;
-}
-
-.like-icon {
- 
-
-  cursor: pointer;
-  transition: color 0.3s;
- 
-  
- 
-}
-
-.like-icon.liked {
-  color: red;
-  
-  text-shadow: 0 0 13px red;
-}
-
-
-.event-details {
-  max-height: 66vh;
-  overflow-y: scroll;
-}
-
-
-
-.slide-div {
+/*.slide-div {
     position: fixed;
     bottom: 95px;
-    right: -100px; /* Initial position outside the viewport */
-    transition: right 0.5s ease-out; /* Animation duration and easing */
+    right: -100px;  Initial position outside the viewport 
+    transition: right 0.5s ease-out;  Animation duration and easing 
   }
   
   .slide-div.show {
-    right: 20px; /* Final position when shown */
-    opacity: 1; /* Show the div */
+    right: 20px; 
+    opacity: 1; 
   }
   
   .slide-div.hide {
-    right: -100px; /* Hide the div */
+    right: -100px; 
     opacity: 0;
-  }
+  }*/
   
+
+
+
   
 
-.create-button {
-   
-    color: white;
-    font-size: 16px;
-    border: none;
-    width: 60px;
-    height: 60px;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 6px 7px 40px -4px
-           rgb(155, 130, 184);
-   background: #271770;
-
-   animation: pulsate 1.5s ease-in-out infinite;
-  
-   
-}
 
 
-.create-icon {
-  font-style: normal;
-  font-size: 20px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+/*The codes below are all for the Admin Dashboard*/
+
+
 
 .upload-button {
-        color: white;
-        font-size: 16px;
-        border: none;
-        width: 60px;
-        height: 60px;
-        padding: 10px;
-        border-radius: 50%;
-        cursor: pointer;
-        box-shadow: 6px 7px 40px -4px
-                rgb(255, 255, 255);
-                transition: right 0.5s ease-out;
-                right: -100px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 6px 7px 40px -4px
+          rgb(255, 255, 255);
+  transition: right 0.5s ease-out;
+  right: 20px;
 }
-
-.upload-button {
-    right: 20px;
-}
-
-
-
-
-
-
-
-
-
-/*Here comes the code for the dashboard*/
 
 .left-parent {
     height: 8vh;
@@ -372,14 +447,9 @@ margin: 0;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    
-  
 }
 
 
-
-
-/* Style the file input container */
 #file-input {
     position: absolute;
     opacity: 0;
