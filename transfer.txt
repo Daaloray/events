@@ -1,3 +1,5 @@
+album and cheatsheet
+
 Tasks
 - Add image loader screen
 - Add website loader

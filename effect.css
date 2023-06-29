@@ -24,3 +24,57 @@
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dropdown-menu {
+       
+      }
+      
+      .dropdown-item-danger {
+        color: var(--bs-red);
+      }
+      .dropdown-item-danger:hover,
+      .dropdown-item-danger:focus {
+        color: #fff;
+        background-color: var(--bs-red);
+      }
+      .dropdown-item-danger.active {
+        background-color: var(--bs-red);
+      }
+      
+     
+      
+     
+     
+      
+      
+      .w-220px {
+        width: 190px;
+      }
+      
+

@@ -34,15 +34,40 @@
     <div class="father-div    m-0">
 
 
-      <div class="search-bar">
-        <form class="d-flex">
-          <input class="form-control-lg w-100 me-2" type="search" placeholder="Search Event" aria-label="Search"/>
+      <div class="search-bar p-0 m-0">
+        <form class="p-0 m-0 border border-dark h-100 ">
+          <input class="form-control w-100 h-100  " type="search" placeholder="Search Event" aria-label="Search"/>
         </form>
       </div>
 
 
-      <div class="notification-popup">notifications here</div>
-      <div class="more-settings-popup">More Settings Popup</div>
+     
+      
+      <div class="more-settings-popup bg-light">
+        <ul class="dropdown-menu d-block position-static m-0 shadow w-220px">
+         
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#music-note-beamed"/></svg>
+              Dark Mode
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#joystick"/></svg>
+              Contact us
+            </a>
+          </li>
+          <li><hr class="dropdown-divider"></li>
+          <li>
+            <a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#">
+              <svg class="bi" width="16" height="16"><use xlink:href="#trash"/></svg>
+              @LUCOM-DEV Team
+            </a>
+          </li>
+        </ul>
+        
+      </div>
 
 
 
@@ -598,7 +623,90 @@
 
 
 
+    <div style="z-index: 9999999; width: 97%; height: 70vh; overflow-y: scroll; margin: 30px auto; " class="notification-popup bg-white">
+               <div class="p-2">
+                <h6>NOTIFICATIONS</h6>
+              </div>
 
+
+               <div class="p-1 notify-body d-flex flex-column gap-3">
+
+
+                 <div class="w-100 h-auto p-2 rounded border border-secondary">
+
+                 <div>
+                  New Birthday/Official event has been posted
+                  </div>
+                  <div>
+                    <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                  </div>
+
+                 </div>
+
+
+                 <div class="w-100 h-auto p-2 rounded border border-secondary">
+                  
+                  <div>
+                   New Birthday/Official event has been posted
+                   </div>
+                   <div>
+                     <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                   </div>
+ 
+                  </div>
+
+
+
+                  <div class="w-100 h-auto p-2 rounded border border-secondary">
+                  
+                    <div>
+                     New Birthday/Official event has been posted
+                     </div>
+                     <div>
+                       <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                     </div>
+   
+                    </div>
+
+
+
+                    <div class="w-100 h-auto p-2 rounded border border-secondary">
+                  
+                      <div>
+                       New Birthday/Official event has been posted
+                       </div>
+                       <div>
+                         <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                       </div>
+     
+                      </div>
+
+
+
+
+                      <div class="w-100 h-auto p-2 rounded border border-secondary">
+                  
+                        <div>
+                         New Birthday/Official event has been posted
+                         </div>
+                         <div>
+                           <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                         </div>
+       
+                        </div>
+
+
+                     
+
+
+               </div>
+    
+
+    </div>
+
+
+
+  
 
     <script src="script.js"></script>
     <script src="bootstrap.bundle.min.js"></script>
@@ -625,6 +733,17 @@
         searchIcon.addEventListener("click", function () {
           closeMenus();
           searchBar.style.display = "block";
+         
+        });
+
+        document.addEventListener("click", function (event) {
+          var targetsch = event.target;
+          if (
+            !targetsch.closest(".search-bar") &&
+            !targetsch.closest("#search-icon")
+          ) {
+            searchBar.style.display = "none";
+          }
         });
 
         notificationIcon.addEventListener("click", function () {
