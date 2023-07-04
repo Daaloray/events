@@ -167,6 +167,7 @@ background-color: #FFF;
   border: none;
   padding: 0;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .trend-text {
@@ -205,6 +206,10 @@ background-color: #FFF;
    width: auto;
    margin: 0;
    border-radius: 10px;     
+}
+
+.trend-content:hover {
+  border-color: #271770;
 }
 
  

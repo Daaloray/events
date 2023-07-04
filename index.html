@@ -104,24 +104,6 @@
                 <a class="nav-link" href="#trend-head">Trending</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search Event"
-                aria-label="Search"
-              />
-              <button
-                style="background-color: yellow; color: #101820ff"
-                class="btn d-flex align-items-center gap-1 lucom-color"
-                type="submit"
-              >
-                <span>Search</span>
-                <i
-                  class="fas fa fa-sharp fa-light fa-magnifying-glass lucom-color"
-                ></i>
-              </button>
-            </form>
           </div>
         </div>
       </nav>
@@ -265,7 +247,7 @@
           id="trend-head"
           class="container-fluid col-sm-4 themed-grid-col trend-head order-md-2 px-3"
         >
-          <h6 class="pt-2">Trending Events in Lasucom</h6>
+          <h6 class="pt-2 d-flex align-items-center gap-2">Trending Events in Lasucom <i class="fa fa-arrow-right" aria-hidden="true"></i></h6>
           <div
             class="trending container-fluid m-0 px-1 d-flex flex-lg-column flex-sm-column gap-md-4"
           >
@@ -464,8 +446,9 @@
                   ></a>
                 </div>
               </div>
-              <div class="bg-white m-0 ps-2 time-posted">
+              <div class="bg-white m-0 px-2 time-posted d-flex justify-content-between align-items-center">
                 <p class="text-muted event-txt-sm">Posted 3 mins ago</p>
+                <p class="text-muted event-txt-sm"><span><i>{portfolio badge}</i></span></p>
               </div>
             </div>
           </div>
@@ -525,8 +508,9 @@
                   ></a>
                 </div>
               </div>
-              <div class="bg-white m-0 ps-2 time-posted">
+              <div class="bg-white m-0 px-2 d-flex justify-content-between align-items-center time-posted">
                 <p class="text-muted event-txt-sm">Posted 3 mins ago</p>
+                <p class="text-muted event-txt-sm"><span><i>{portfolio badge}</i></span></p>
               </div>
             </div>
           </div>
