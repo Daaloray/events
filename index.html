@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
   </head>
 
+
+
+
   <body class="m-0">
 
 
@@ -40,34 +43,37 @@
         </form>
       </div>
 
+      
+   <div class="more-settings-popup bg-light">
+    <ul class="dropdown-menu d-block position-static m-0 shadow w-220px">
+     
+      <li>
+        <a class="dropdown-item d-flex gap-2 align-items-center small" href="#">
+          <svg class="bi" width="16" height="16"><use xlink:href="#music-note-beamed"/></svg>
+          Dark Mode
+        </a>
+      </li>
+      <li>
+        <a class="dropdown-item d-flex gap-2 align-items-center small" href="#">
+          <svg class="bi" width="16" height="16"><use xlink:href="#joystick"/></svg>
+          Contact us
+        </a>
+      </li>
+      <li><hr class="dropdown-divider"></li>
+      <li>
+        <a class="dropdown-item  d-flex gap-2 align-items-center small" href="#">
+          <svg class="bi" width="16" height="16"><use xlink:href="#trash"/></svg>
+          @LUCOM-DEV Team
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+
 
      
       
-      <div class="more-settings-popup bg-light">
-        <ul class="dropdown-menu d-block position-static m-0 shadow w-220px">
-         
-          <li>
-            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-              <svg class="bi" width="16" height="16"><use xlink:href="#music-note-beamed"/></svg>
-              Dark Mode
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item d-flex gap-2 align-items-center" href="#">
-              <svg class="bi" width="16" height="16"><use xlink:href="#joystick"/></svg>
-              Contact us
-            </a>
-          </li>
-          <li><hr class="dropdown-divider"></li>
-          <li>
-            <a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center" href="#">
-              <svg class="bi" width="16" height="16"><use xlink:href="#trash"/></svg>
-              @LUCOM-DEV Team
-            </a>
-          </li>
-        </ul>
-        
-      </div>
+     
 
 
 
@@ -385,7 +391,7 @@
 
 
         <div
-          class="col-sm-8 themed-grid-col order-md-1 event-head p-0 mt-4"
+          class="col-sm-8 themed-grid-col order-md-1 event-head p-0 mt- content"
           id="event-head"
         >
           <h6 style="padding-left: 1rem" class="pt-3 pb-2 fw-bolder">
@@ -607,86 +613,84 @@
 
 
 
-    <div class="notification-popup bg-white p-2 m-0 ">
-               <div class="p-2">
-                <h6>NOTIFICATIONS</h6>
+    <div class="notification-popup  " id="overlay">
+      <div class="overlay-content d-flex flex-column gap-2 ">
+        <div style="width: 100%" class="p-2 rounded border border-secondary">       
+          <div>
+           New {event type} has been posted
+           </div>
+           <div>
+             <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+           </div>
+
+          </div>
+
+
+          <div style="width: 100%" class="p-2 rounded border border-secondary">       
+            <div>
+             New {event type} has been posted
+             </div>
+             <div>
+               <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+             </div>
+  
+            </div>
+
+
+            <div style="width: 100%" class="p-2 rounded border border-secondary">       
+              <div>
+               New {event type} has been posted
+               </div>
+               <div>
+                 <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+               </div>
+    
               </div>
 
 
-               <div class="p-1 notify-body d-flex flex-column gap-3">
 
-
-                 <div class="w-100 h-auto p-2 rounded border border-secondary">
-
-                 <div>
-                  New Birthday/Official event has been posted
-                  </div>
-                  <div>
-                    <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
-                  </div>
-
+              <div style="width: 100%" class="p-2 rounded border border-secondary">       
+                <div>
+                 New {event type} has been posted
                  </div>
+                 <div>
+                   <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                 </div>
+      
+                </div>
 
 
-                 <div class="w-100 h-auto p-2 rounded border border-secondary">
-                  
+
+                <div style="width: 100%" class="p-2 rounded border border-secondary">       
                   <div>
-                   New Birthday/Official event has been posted
+                   New {event type} has been posted
                    </div>
                    <div>
                      <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
                    </div>
- 
+        
                   </div>
 
 
 
-                  <div class="w-100 h-auto p-2 rounded border border-secondary">
-                  
+
+                  <div style="width: 100%" class="p-2 rounded border border-secondary">       
                     <div>
-                     New Birthday/Official event has been posted
+                     New {event type} has been posted
                      </div>
                      <div>
                        <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
                      </div>
-   
+          
                     </div>
-
-
-
-                    <div class="w-100 h-auto p-2 rounded border border-secondary">
-                  
-                      <div>
-                       New Birthday/Official event has been posted
-                       </div>
-                       <div>
-                         <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
-                       </div>
-     
-                      </div>
-
-
-
-
-                      <div class="w-100 h-auto p-2 rounded border border-secondary">
-                  
-                        <div>
-                         New Birthday/Official event has been posted
-                         </div>
-                         <div>
-                           <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
-                         </div>
-       
-                        </div>
-
-
-                     
-
-
-               </div>
-    
-
+      </div>
     </div>
+    
+   
+    
+    
+   
+    
 
 
 
@@ -698,7 +702,20 @@
 
 
     <script>
-     
+    
+    var overlay = document.getElementById("overlay");
+var body = document.body;
+
+function openOverlay() {
+  overlay.style.display = "block";
+  body.classList.add("no-scroll");
+}
+
+function closeOverlay() {
+  overlay.style.display = "none";
+  body.classList.remove("no-scroll");
+}
+
 
       document.addEventListener("DOMContentLoaded", function () {
         var homeIcon = document.querySelector("#home-icon");
@@ -713,6 +730,7 @@
         homeIcon.addEventListener("click", function () {
           scrollToTop();
           closeMenus();
+          closeOverlay();
         });
 
         searchIcon.addEventListener("click", function () {
@@ -720,6 +738,7 @@
           searchBar.style.display = "block";
           searchBar.classList.add("active");
           searchnav.focus();
+          closeOverlay();
          
         });
 
@@ -735,7 +754,7 @@
 
         notificationIcon.addEventListener("click", function () {
           closeMenus();
-          notificationPopup.style.display = "block";
+         openOverlay();
         });
 
         moreSettingsIcon.addEventListener("click", function () {
