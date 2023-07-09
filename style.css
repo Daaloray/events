@@ -385,11 +385,13 @@ font-size: 20px;
      height: auto;
  }
  
+.homesicon {
+  color: #271770;
+}
 
-
- #home-icon:hover, #home-icon:focus{
-  color: ;
- }
+.homesicon:hover, .homesicon:focus {
+  color: #a999ee ;
+}
 
  .active {
   color: #a999ee;
