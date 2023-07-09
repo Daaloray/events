@@ -539,24 +539,24 @@
         </button>
 
         <div class="footbar">
-          <div class="navigate">
+          <div class="navigate" id="home-icon">
             <i id="home-icon" class="fas fa fa-thin fa-house foot-icons"></i>
           </div>
-          <div class="navigate searches">
+          <div class="navigate searches"  id="search-icon">
             <i
-              id="search-icon"
+             
               class="fas fa fa-sharp fa-light fa-magnifying-glass glass foot-icons"
             ></i>
           </div>
-          <div class="navigate">
+          <div class="navigate" id="notification-icon">
             <i
-              id="notification-icon"
+              
               class="fas fa fa-thin fa-bell foot-icons"
             ></i>
           </div>
-          <div class="navigate">
+          <div class="navigate" id="more-settings-icon">
             <i
-              id="more-settings-icon"
+              
               class="fas fa fa-light fa-list-ul foot-icons"
             ></i>
           </div>
@@ -614,75 +614,120 @@
 
 
     <div class="notification-popup  " id="overlay">
-      <div class="overlay-content d-flex flex-column gap-2 ">
-        <div style="width: 100%" class="p-2 rounded border border-secondary">       
+     
+      <div class="overlay-content d-flex flex-column gap-1 p-0  ">
+        <div   class="fixed-top bg-white h-auto w-100 p-2 "><h4>NOTIFICATIONS</h4></div>
+        <div class="notify px-3 py-2 rounded-2 d-flex flex-column gap-1">       
+          
+          <div class="d-flex justify-content-start align-items-center">
+            <small class="text-muted">1 min ago </small>
+            </div>
           <div>
            New {event type} has been posted
            </div>
            <div>
-             <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+             <button class="btn btn-lucom-1 w-100 "><small>Tap to read more</small></button>
            </div>
+          
 
           </div>
 
 
-          <div style="width: 100%" class="p-2 rounded border border-secondary">       
+
+          <div class="notify px-3 py-2 rounded-2 d-flex flex-column gap-1">       
+          
+            <div class="d-flex justify-content-start align-items-center">
+              <small class="text-muted">1 min ago </small>
+              </div>
             <div>
              New {event type} has been posted
              </div>
              <div>
-               <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+               <button class="btn btn-lucom-1 w-100 "><small>Tap to read more</small></button>
              </div>
+            
   
             </div>
 
 
-            <div style="width: 100%" class="p-2 rounded border border-secondary">       
+
+            <div class="notify px-3 py-2 rounded-2 d-flex flex-column gap-1">       
+          
+              <div class="d-flex justify-content-start align-items-center">
+                <small class="text-muted">1 min ago </small>
+                </div>
               <div>
                New {event type} has been posted
                </div>
                <div>
-                 <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                 <button class="btn btn-lucom-1 w-100 "><small>Tap to read more</small></button>
                </div>
+              
     
               </div>
 
 
 
-              <div style="width: 100%" class="p-2 rounded border border-secondary">       
+
+              <div class="notify px-3 py-2 rounded-2 d-flex flex-column gap-1">       
+          
+                <div class="d-flex justify-content-start align-items-center">
+                  <small class="text-muted">1 min ago </small>
+                  </div>
                 <div>
                  New {event type} has been posted
                  </div>
                  <div>
-                   <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                   <button class="btn btn-lucom-1 w-100 "><small>Tap to read more</small></button>
                  </div>
+                
       
                 </div>
 
 
 
-                <div style="width: 100%" class="p-2 rounded border border-secondary">       
+
+                <div class="notify px-3 py-2 rounded-2 d-flex flex-column gap-1">       
+          
+                  <div class="d-flex justify-content-start align-items-center">
+                    <small class="text-muted">1 min ago </small>
+                    </div>
                   <div>
                    New {event type} has been posted
                    </div>
                    <div>
-                     <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                     <button class="btn btn-lucom-1 w-100 "><small>Tap to read more</small></button>
                    </div>
+                  
         
                   </div>
 
 
 
 
-                  <div style="width: 100%" class="p-2 rounded border border-secondary">       
+
+                  <div class="notify px-3 py-2 rounded-2 d-flex flex-column gap-1">       
+          
+                    <div class="d-flex justify-content-start align-items-center">
+                      <small class="text-muted">1 min ago </small>
+                      </div>
                     <div>
                      New {event type} has been posted
                      </div>
                      <div>
-                       <button class="btn btn-lucom-1 w-100 ">Tap to read more</button>
+                       <button class="btn btn-lucom-1 w-100 "><small>Tap to read more</small></button>
                      </div>
+                    
           
                     </div>
+
+
+         
+
+
+
+
+                 
       </div>
     </div>
     
@@ -717,72 +762,158 @@ function closeOverlay() {
 }
 
 
-      document.addEventListener("DOMContentLoaded", function () {
-        var homeIcon = document.querySelector("#home-icon");
-        var searchIcon = document.querySelector("#search-icon");
-        var notificationIcon = document.querySelector("#notification-icon");
-        var moreSettingsIcon = document.querySelector("#more-settings-icon");
-        var searchBar = document.querySelector(".search-bar");
-        var notificationPopup = document.querySelector(".notification-popup");
-        var moreSettingsPopup = document.querySelector(".more-settings-popup");
-        var searchnav = document.getElementById("searchnav");
 
-        homeIcon.addEventListener("click", function () {
-          scrollToTop();
-          closeMenus();
-          closeOverlay();
-        });
 
-        searchIcon.addEventListener("click", function () {
-          closeMenus();
-          searchBar.style.display = "block";
-          searchBar.classList.add("active");
-          searchnav.focus();
-          closeOverlay();
-         
-        });
+var homeIcon = document.querySelector("#home-icon");
+var searchIcon = document.querySelector("#search-icon");
+var notificationIcon = document.querySelector("#notification-icon");
+var moreSettingsIcon = document.querySelector("#more-settings-icon");
+var searchBar = document.querySelector(".search-bar");
+var notificationPopup = document.querySelector(".notification-popup");
+var moreSettingsPopup = document.querySelector(".more-settings-popup");
+var searchnav = document.getElementById("searchnav");
 
-        document.addEventListener("click", function (event) {
-          var targetsch = event.target;
-          if (
-            !targetsch.closest(".search-bar") &&
-            !targetsch.closest("#search-icon")
-          ) {
-            searchBar.style.display = "none";
-          }
-        });
+var isSearchBarOpen = false;
+var isNotificationPopupOpen = false;
+var isMoreSettingsPopupOpen = false;
 
-        notificationIcon.addEventListener("click", function () {
-          closeMenus();
-         openOverlay();
-        });
+var homeIcon = document.querySelector("#home-icon");
+homeIcon.classList.add("active");
 
-        moreSettingsIcon.addEventListener("click", function () {
-          moreSettingsPopup.style.display = "block";
-        });
 
-        document.addEventListener("click", function (event) {
-          var target = event.target;
-          if (
-            !target.closest(".more-settings-popup") &&
-            !target.closest("#more-settings-icon")
-          ) {
-            moreSettingsPopup.style.display = "none";
-          }
-        });
+homeIcon.addEventListener("click", function () {
+  scrollToTop();
+  closeMenus();
+  closeOverlay();
+});
 
-        function scrollToTop() {
-          window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-          });
-        }
+searchIcon.addEventListener("click", function () {
+  isSearchBarOpen = !isSearchBarOpen;
+  toggleMenu(searchBar, isSearchBarOpen);
+  closeMenusExcept(searchBar);
+  closeOverlay();
+  if (isSearchBarOpen) {
+    searchnav.focus();
+    homeIcon.classList.remove("red");
+    searchIcon.classList.add("active");
+  } else {
+    searchIcon.classList.remove("active");
+    setHomeIconRedIfNoFocus();
+  }
+});
 
-        function closeMenus() {
-          searchBar.style.display = "none";
-          notificationPopup.style.display = "none";
-        }
-      });
+document.addEventListener("click", function (event) {
+  var targetsch = event.target;
+  if (
+    !targetsch.closest(".search-bar") &&
+    !targetsch.closest("#search-icon")
+  ) {
+    searchBar.style.display = "none";
+    isSearchBarOpen = false;
+  }
+});
+
+notificationIcon.addEventListener("click", function () {
+  isNotificationPopupOpen = !isNotificationPopupOpen;
+  toggleMenu(notificationPopup, isNotificationPopupOpen);
+  if (isNotificationPopupOpen) {
+    closeMenusExcept(notificationPopup);
+    openOverlay();
+    homeIcon.classList.remove("red");
+    notificationIcon.classList.add("active");
+  } else {
+    closeOverlay();
+    notificationIcon.classList.remove("active");
+    setHomeIconRedIfNoFocus();
+  }
+});
+
+
+
+
+moreSettingsIcon.addEventListener("click", function () {
+  isMoreSettingsPopupOpen = !isMoreSettingsPopupOpen;
+  toggleMenu(moreSettingsPopup, isMoreSettingsPopupOpen);
+  if (isMoreSettingsPopupOpen) {
+    homeIcon.classList.remove("red");
+   
+  } else {
+    moreSettingsIcon.classList.remove("active");
+    setHomeIconRedIfNoFocus();
+  }
+});
+
+document.addEventListener("click", function (event) {
+  var target = event.target;
+  if (
+    !target.closest(".more-settings-popup") &&
+    !target.closest("#more-settings-icon")
+  ) {
+    moreSettingsPopup.style.display = "none";
+    isMoreSettingsPopupOpen = false;
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+function closeMenus() {
+  searchBar.style.display = "none";
+  notificationPopup.style.display = "none";
+  moreSettingsPopup.style.display = "none";
+  isSearchBarOpen = false;
+  isNotificationPopupOpen = false;
+  isMoreSettingsPopupOpen = false;
+}
+
+function closeMenusExcept(menu) {
+  if (menu !== searchBar) {
+    searchBar.style.display = "none";
+    isSearchBarOpen = false;
+    searchIcon.classList.remove("active");
+  }
+  if (menu !== notificationPopup) {
+    notificationPopup.style.display = "none";
+    isNotificationPopupOpen = false;
+    notificationIcon.classList.remove("active");
+  }
+  if (menu !== moreSettingsPopup) {
+    moreSettingsPopup.style.display = "none";
+    isMoreSettingsPopupOpen = false;
+    moreSettingsIcon.classList.remove("active");
+  }
+
+
+}
+
+function setHomeIconRedIfNoFocus() {
+  if (
+    !searchIcon.classList.contains("active") &&
+    !notificationIcon.classList.contains("active") &&
+    !moreSettingsIcon.classList.contains("active")
+  ) {
+    homeIcon.classList.add("red");
+  }
+}
+
+
+function toggleMenu(menu, isOpen) {
+  if (isOpen) {
+    menu.style.display = "block";
+  } else {
+    menu.style.display = "none";
+  }
+}
+
+
+
+    
+
+
     </script>
   </body>
 </html>
