@@ -1,0 +1,112 @@
+
+/*.slide-div {
+    position: fixed;
+    bottom: 95px;
+    right: -100px;  Initial position outside the viewport 
+    transition: right 0.5s ease-out;  Animation duration and easing 
+  }
+  
+  .slide-div.show {
+    right: 20px; 
+    opacity: 1; 
+  }
+  
+  .slide-div.hide {
+    right: -100px; 
+    opacity: 0;
+  }*/
+  
+
+/*The codes below are all for the Admin Dashboard*/
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.upload-button {
+  color: white;
+  font-size: 16px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 6px 7px 40px -4px
+         rgb(155, 130, 184);
+ background: #271770;
+ animation: pulsate 1.5s ease-in-out infinite;
+  }
+  
+  .left-parent {
+      height: 8vh;
+  }
+  
+
+  .main-cont {
+    height: ;
+  }
+  
+  .profile-details {
+      height: auto;
+      
+      border-bottom: 1px solid rgba(0, 123, 255, .2);
+  }
+  
+  .profile-pic {
+      border-radius: 50%;
+      border: none;
+      width: 50px;
+      height: 50px;
+  }
+  
+  .dp {
+      font-size: 16px;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  
+  
+  #file-input {
+      position: absolute;
+      opacity: 0;
+     
+     
+    }
+    
+    /* Style the label */
+    #file-label {
+      display: inline-block;
+      padding: 20px 20px;
+      background-color: #e8e8e8;
+      color: #333;
+      cursor: pointer;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      cursor: pointer;
+      text-align: center;
+    }
+    
+    /* Style the "No image chosen" text */
+    #file-chosen {
+      margin-left: 10px;
+      color: #666;
+    }
+    
+    /* Change the "Choose file" text */
+    #file-input::file-selector-button::before {
+      content: "Choose image";
+    }
+    
+    
+    /* Change the "No file chosen" text */
+    #file-input::file-selector-button::after {
+      content: "No image chosen";
+    }
+    
