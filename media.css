@@ -11,6 +11,9 @@
         
     }
     
+
+
+   
   
 
 @media (max-width: 762px) {
@@ -34,7 +37,7 @@
             overflow-y: visible;
             margin-bottom: 25px;
         }
-
+       
      
     }
 
@@ -75,8 +78,23 @@
           overflow-y: scroll;
           
         }
-
+       
     }
+
+
+    @media (min-width: 770px) {
+        .countfont {
+            font-size: 100px;
+        }
+    }
+
+
+    @media (max-width: 769.98px) {
+        .countfont {
+            font-size: 50px;
+        }
+    }
+
 
 
 @media (max-width: 575px) {
