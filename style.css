@@ -27,7 +27,9 @@ a {
  }
 
 
-
+.countfont {
+  font-size: 50px;
+}
 
 
 
@@ -110,7 +112,7 @@ z-index: 9999;
 width: 100px;
 height: 100px;
 border-radius: 50%;
-background-image: url(./ball.jpg);
+background-image: url(./images/logo/immuneblack.jpeg);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -149,6 +151,8 @@ animation: spin 1s infinite linear;
   width: auto;
   margin: 0;
   height: auto;
+  padding: 0;
+  border: none;
  
 }
 

@@ -17,7 +17,7 @@
     <meta name="author" content="The LUCOM-DEV Team">
     <title>Document</title>
     <link rel="stylesheet" href="dashboard.css">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css">  
     <link rel="stylesheet" href="effect.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -25,106 +25,195 @@
 </head>
 
 
-<body class="bg-white m-0 p-0 border border-danger  ">
+<body class="bg-white m-0 p-0  ">
 
 
     <div class="parent m-0 p-0">
 
+      <nav>
+        <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Upload Event</button>
+          <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Past Events</button>
+               </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+          <div class="profile-details container-fluid py-4 ps-2  ">
 
-      <div class="profile-details container-fluid py-4 ps-2  ">
+            <div class="d-flex left-parent justify-content-start gap-2 " >
+                <div class="profile-pic w-auto  p-0"><img class="dp" src="ball.jpg" alt=""></div>
+                <div class="names d-flex flex-column text-left ps-2 "><span class="fs-5" >Okoye Charles <span><i class=""></i></span></span> <span class="small">P.R.O, Lasumsa</span></div>
+            
+              </div> 
+            
+                  </div>
+            
+                  
+                  <!--<div class="container  ">Hello Charles, Upload an event</div>-->
+              
+                  
+            
+            <div class=" row  mt-3 mx-0 main-cont w-100 p-2">
+            
+                  <div class="left-content container col-sm-6 themed-grid-col pt-2 ps-sm-3 d-flex flex-column gap-3 ">
+            
+                    <div class="col-sm-12 col-lg-12  px-2 py-1 h-auto  border border-primary  ">
+            
+                      <label for="eventName" class="form-label">Event Title</label>
+                      <input type="text" class="form-control " id="eventName" placeholder="Enter Event Title" required>
+            
+                    </div>
+            
+                    <div class="row g-2 p-2 h-auto border border-danger  ">
+                    
+                      <div class="col-7 col-lg-5  ">
+                        
+                          <label class="pb-2" for="datepicker">Event Date</label>
+                          <div class="input-group">
+                            <input type="date" class="form-control datepicker" placeholder="mm/dd/yy" aria-label ="select date">
+                           
+                          </div>
+                        
+                          
+                      </div>
+            
+                      <div class="col-4 col-lg-5 px-2  right-content  form-group">
+                        <label class="pb-2" for="timepicker">Event Time</label>
+                       
+                          <input type="time" class="form-control timepicker"  placeholder="time" >
+                          
+                        
+                    </div>
+            
+            
+                     
+            
+                    </div>
+            
+                    <div class="d-flex align-items-center col-sm-5 col-lg-5 px-3 pt-2 gap-1  w-auto h-auto ">
+                      <input type="file" name="" id="file-input" accept="image/*" >
+                      <label for="file-input"  id="file-label" class="form-label"><i  class="fa fa-camera" aria-hidden="true"></i></label>
+                      <span id="file-chosen">Add Event Image</span>
+                     
+                      <i style="color: green ; display: none;" class="fa fa-check-circle" aria-hidden="true"></i>
+                    </div>
+            
+            
+                  </div>
+            
+            
+            
+                  <div class="right-content container-fluid col-sm-6 themed-grid-col pt-2  ">
+                            <div class="px-2 form-group">
+                      <label class="pb-2" for="eventarea">Event Details</label>
+                      <textarea class="form-control h-100" id="eventarea" rows="6" placeholder="Enter full details about your event here"></textarea>
+                    </div>
+                    
+                    
+                  </div>
+            
+                  <div class="upload pt-2 ">
+                    <div class="container hint col-sm-12 small  text-center"><span><i class="fa fa-pen fa-sm"></i></span> Events from this account will be assigned a top priority badge </div>
+                    
+                  </div>
+            
+            </div>
+            
+                 
+                 <div class="upload-cont fixed-bottoms">
+                    <div class=" w-auto">
+                      <button type="button" id="upload-button" class="upload-button " data-bs-toggle="tooltip" data-bs-placement="left" title="Create Event">
+                     <i class="fab fa-telegram fa-2x text-light"></i> 
+                      
+                      </button>
+                    </div>
+            
+                  </div>
 
-<div class="d-flex left-parent justify-content-start gap-2 " >
-    <div class="profile-pic w-auto  p-0"><img class="dp" src="ball.jpg" alt=""></div>
-    <div class="names d-flex flex-column text-center"><span class="fs-5" >Okoye Charles <span><i class=""></i></span></span> <span class="small">P.R.O, Lasumsa</span></div>
-
-  </div>
-
-      </div>
-
-      
-      <!--<div class="container  ">Hello Charles, Upload an event</div>-->
-
-
-<div class=" row  mt-3 mx-0 main-cont w-100 ps-2">
-
-      <div class="left-content container col-sm-6 themed-grid-col pt-2 ps-sm-3 d-flex flex-column gap-3 ">
-
-        <div class="col-sm-12 col-lg-12  px-2 py-1 h-auto  border border-primary  ">
-
-          <label for="eventName" class="form-label">Event Title</label>
-          <input type="text" class="form-control " id="eventName" placeholder="Enter Event Title" required>
 
         </div>
 
-        <div class="row g-2 p-2 h-auto border border-danger  ">
-        
-          <div class="col-7 col-lg-5  ">
-            
-              <label class="pb-2" for="datepicker">Event Date</label>
-              <div class="input-group">
-                <input type="date" class="form-control datepicker" placeholder="mm/dd/yy" aria-label ="select date">
-                <div class="input-group-append">
-                  <span class="input-group-text">
-                    <i class="fa fa-calendar-alt"></i>
-                  </span>
+
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <div><h2 class="strong ps-4 ps-sm-3 py-2">Uploaded Events by you</h2></div>
+
+          <div class="dashbody w-100 ">
+
+            <div class="row gap-4  text-center border border-dark past-evecont pt-4">
+              
+              <div class="col-sm-4 themed-grid-col past-eve h-auto w-auto m-0 p-0">
+                <div class="pstevent-name border border-primary"></div>
+                <div class="pstevent-menu row m-0 p-0">
+                  <div class="m-0 w-auto pt-3 px-4 border border-dark">Edit</div>
+                  <div class="h-auto w-auto pt-3 px-5 border border-dark">Delete</div>
+                  <div class="h-auto w-auto pt-3 px-4 border border-dark">2/07/23</div>
                 </div>
               </div>
-            
-              
+
+              <div class="col-sm-4 themed-grid-col past-eve h-auto w-auto m-0 p-0">
+                <div class="pstevent-name border border-primary"></div>
+                <div class="pstevent-menu"></div>
+              </div>
+
+              <div class="col-sm-4 themed-grid-col past-eve h-auto w-auto  m-0 p-0">
+                <div class="pstevent-name border border-primary"></div>
+                <div class="pstevent-menu"></div>
+              </div>
+
+
+              <div class="col-sm-4 themed-grid-col past-eve h-auto w-auto  m-0 p-0">
+                <div class="pstevent-name border border-primary"></div>
+                <div class="pstevent-menu"></div>
+              </div>
+
+
+              <div class="col-sm-4 themed-grid-col past-eve h-auto w-auto  m-0 p-0">
+                <div class="pstevent-name border border-primary"></div>
+                <div class="pstevent-menu"></div>
+              </div>
+
+
+
+              <div class="col-sm-4 themed-grid-col past-eve h-auto w-auto  m-0 p-0">
+                <div class="pstevent-name border border-primary"></div>
+                <div class="pstevent-menu"></div>
+              </div>
+
+
+
+              <div class="col-sm-4 themed-grid-col past-eve h-auto w-auto  m-0 p-0">
+                <div class="pstevent-name border border-primary"></div>
+                <div class="pstevent-menu"></div>
+              </div>
+
+
+
+              <div class="col-sm-4 themed-grid-col past-eve h-auto w-auto  m-0 p-0">
+                <div class="pstevent-name border border-primary"></div>
+                <div class="pstevent-menu"></div>
+              </div>
+
+
+
+              <div class="col-sm-4 themed-grid-col past-eve h-auto w-auto  m-0 p-0">
+                <div class="pstevent-name border border-primary"></div>
+                <div class="pstevent-menu"></div>
+              </div>
+
+            </div>
+
           </div>
-
-          <div class="col-4 col-lg-5 px-2  right-content  form-group">
-            <label class="pb-2" for="timepicker">Event Time</label>
-           
-              <input type="time" class="form-control timepicker"  placeholder="time" >
-              
-            
         </div>
-
-
-         
-
-        </div>
-
-        <div class="d-flex align-items-center col-sm-5 col-lg-5 px-3 pt-2 gap-1  w-auto h-auto ">
-          <input type="file" name="" id="file-input" accept="image/*" >
-          <label for="file-input"  id="file-label" class="form-label"><i  class="fa fa-camera" aria-hidden="true"></i></label>
-          <span id="file-chosen">Add Event Image</span>
-         
-          <i style="color: green ; display: none;" class="fa fa-check-circle" aria-hidden="true"></i>
-        </div>
-
-
+       
       </div>
+      
 
 
 
-      <div class="right-content container-fluid col-sm-6 themed-grid-col pt-2  ">
-                <div class="px-2 form-group">
-          <label class="pb-2" for="eventarea">Event Details</label>
-          <textarea class="form-control h-100" id="eventarea" rows="6" placeholder="Enter full details about your event here"></textarea>
-        </div>
-        
-        
-      </div>
 
-      <div class="upload pt-2 ">
-        <div class="container hint col-sm-12 small  text-center"><span><i class="fa fa-pen fa-sm"></i></span> Events from this account will be assigned a top priority badge </div>
-        
-      </div>
 
-</div>
 
-     
-     <div class="upload-cont fixed-bottoms">
-        <div class=" w-auto">
-          <button type="button" id="upload-button" class="upload-button " data-bs-toggle="tooltip" data-bs-placement="left" title="Create Event">
-         <i class="fab fa-telegram fa-2x text-light"></i> 
-          
-          </button>
-        </div>
-
-      </div>
+    
 
 
       
@@ -146,8 +235,9 @@
 
 
     
-    
+    <script src="bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+   
    
 </body>
 </html>

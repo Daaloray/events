@@ -25,6 +25,42 @@ body {
 }
 
 
+
+.dashbody {
+  height: 80vh;
+  width: 100%;
+  
+}
+
+.past-evecont {
+  margin: 0 auto;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+
+
+.pstevent-name {
+   height: 252px;
+   width: 279px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .upload-button {
   color: white;
   font-size: 16px;
@@ -45,9 +81,7 @@ body {
   }
   
 
-  .main-cont {
-    height: ;
-  }
+  
   
   .profile-details {
       height: auto;
@@ -110,3 +144,21 @@ body {
       content: "No image chosen";
     }
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 308px) {
+    
+
+    
+    }
